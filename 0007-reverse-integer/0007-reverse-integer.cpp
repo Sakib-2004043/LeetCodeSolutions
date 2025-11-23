@@ -13,7 +13,6 @@ public:
                 return 0;
             }
 
-
             rev = rev*10 + rem;
             x/=10;
         }
