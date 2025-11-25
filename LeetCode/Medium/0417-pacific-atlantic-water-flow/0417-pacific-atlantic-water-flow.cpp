@@ -19,7 +19,7 @@ public:
         // }
 
         if (cy + 1 == col || cx + 1 == row) {
-            // atlantic[cx][cy] = true;
+            atlantic[cx][cy] = true;
             return true;
         }
 
@@ -31,8 +31,11 @@ public:
             if (valid && !visited[nx][ny] &&
                 heights[nx][ny] <= heights[cx][cy]) {
 
+                if (atlantic[nx][ny]) {
+                    return true;
+                }
                 result = check_atlantic(nx, ny, heights);
-                if(result){
+                if (result) {
                     return result;
                 }
             }
@@ -64,8 +67,12 @@ public:
             if (valid && !visited[nx][ny] &&
                 heights[nx][ny] <= heights[cx][cy]) {
 
+                if (pacific[nx][ny]) {
+                    return true;
+                }
+
                 result = check_pacific(nx, ny, heights);
-                if(result){
+                if (result) {
                     return result;
                 }
             }
