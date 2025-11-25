@@ -55,7 +55,7 @@ public:
         // }
 
         if (cy == 0 || cx == 0) {
-            // pacific[cx][cy] = true;
+            pacific[cx][cy] = true;
             return true;
         }
 
