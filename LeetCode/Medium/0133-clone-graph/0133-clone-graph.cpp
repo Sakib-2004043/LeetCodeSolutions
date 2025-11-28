@@ -4,75 +4,63 @@ class Node {
 public:
     int val;
     vector<Node*> neighbors;
-    Node() {
-        val = 0;
-        neighbors = vector<Node*>();
-    }
-    Node(int _val) {
-        val = _val;
-        neighbors = vector<Node*>();
-    }
-    Node(int _val, vector<Node*> _neighbors) {
-        val = _val;
-        neighbors = _neighbors;
-    }
+    Node() : val(0), neighbors(vector<Node*>()) {}
+    Node(int _val) : val(_val), neighbors(vector<Node*>()) {}
+    Node(int _val, vector<Node*> _neighbors) : val(_val), neighbors(_neighbors) {}
 };
 */
 
 class Solution {
 public:
     Node* cloneGraph(Node* node) {
-        if (!node) {
-            return NULL;
-        }
+        if (!node) return nullptr;
 
-        map<int, Node*> mp;
+        // Mapping original node value → cloned node pointer
+        map<int, Node*> cloneMap;
+
+        // BFS queue
         queue<Node*> q;
+
+        // Step 1: Create all nodes (structure only, no neighbors)
+        q.push(node);
+        cloneMap[node->val] = new Node(node->val);
+
         vector<bool> visited(200, false);
 
-        q.push(node);
-
-        Node* newNode = new Node();
-        newNode->val = node->val;
-        mp[node->val] = newNode;
-
         while (!q.empty()) {
-            Node* curNode = NULL;
-            curNode = q.front();
+            Node* curr = q.front();
             q.pop();
-            visited[curNode->val] = true;
-            for (auto x : curNode->neighbors) {
-                if (!visited[x->val]) {
-                    q.push(x);
-                    Node* newNode = new Node();
-                    newNode->val = x->val;
-                    mp[x->val] = newNode;
+            visited[curr->val] = true;
+
+            for (Node* nei : curr->neighbors) {
+                if (!visited[nei->val]) {
+                    if (!cloneMap.count(nei->val)) {
+                        cloneMap[nei->val] = new Node(nei->val);
+                    }
+                    q.push(nei);
+                    visited[nei->val] = true;
                 }
             }
         }
 
-        q.push(node);
+        // Step 2: Connect neighbors
         fill(visited.begin(), visited.end(), false);
+        q.push(node);
+        visited[node->val] = true;
 
         while (!q.empty()) {
-            Node* curNode = NULL;
-            curNode = q.front();
+            Node* curr = q.front();
             q.pop();
-            visited[curNode->val] = true;
-            for (auto x : curNode->neighbors) {
-                if (!visited[x->val]) {
-                    visited[x->val] = true;
-                    q.push(x);
+
+            for (Node* nei : curr->neighbors) {
+                cloneMap[curr->val]->neighbors.push_back(cloneMap[nei->val]);
+                if (!visited[nei->val]) {
+                    visited[nei->val] = true;
+                    q.push(nei);
                 }
-                
-                // cout<<curNode->val<<"--==>>"<<x->val<<endl;
-                mp[curNode->val]->neighbors.push_back(mp[x->val]);
             }
-            // cout<<curNode->val<<"--Neig Size==>>"<<mp[curNode->val]->neighbors.size()<<endl;
         }
 
-        // cout << mp.size();
-        // Node* dummy = new Node();
-        return mp[node->val];
+        return cloneMap[node->val];
     }
 };
