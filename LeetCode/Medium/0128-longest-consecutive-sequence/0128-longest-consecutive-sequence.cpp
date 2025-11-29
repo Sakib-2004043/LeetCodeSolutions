@@ -6,17 +6,18 @@ public:
         }
         int i, n, ans, prev, now, counter;
         ans = 0;
-        map<int, bool> numCheck;
+        set<int> numCheck;
 
         n = nums.size();
 
+        prev = pow(10,9)+5; 
         for (i = 0; i < n; i++) {
-            numCheck[nums[i]] = true;
+            numCheck.insert(nums[i]);
+            prev = min (prev, nums[i]);
         }
-        prev = *min_element(nums.begin(), nums.end());
         counter = 0;
         for (auto x : numCheck) {
-            now = x.first;
+            now = x;
             if ((now - prev) <= 1) {
                 counter += 1;
             } else {
@@ -25,7 +26,7 @@ public:
             }
             // cout << x.first << " " << x.second << endl;
             // cout << "Now : " << now << " " << "Prev : " << prev << endl;
-            prev = x.first;
+            prev = x;
         }
         ans = max(ans, counter);
         return ans;
