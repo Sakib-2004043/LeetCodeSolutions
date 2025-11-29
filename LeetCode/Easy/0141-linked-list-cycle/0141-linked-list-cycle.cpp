@@ -9,7 +9,7 @@
 class Solution {
 public:
     bool hasCycle(ListNode* head) {
-        map<ListNode*, bool> visited;
+        unordered_map<ListNode*, bool> visited;
         while (head != nullptr) {
             if (visited[head]) {
                 return true;
