@@ -2,8 +2,8 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         int i, n;
-        map<int, bool> valFind;
-        map<int, int> index;
+        unordered_map<int, bool> valFind;
+        unordered_map<int, int> index;
         vector<int> retVec;
 
         n = nums.size();
