@@ -1,9 +1,9 @@
 class Solution {
 public:
     int hammingWeight(int n) {
-        int i, ans;
+        int ans;
         ans=0;
-        for(i=0;i<32;i++){
+        while(n){
             if(n&1){
                 ans++;
             }
