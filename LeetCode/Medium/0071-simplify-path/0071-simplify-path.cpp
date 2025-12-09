@@ -21,12 +21,11 @@ public:
         }
         while (!st.empty()) {
             cout << "/" << st.top();
-
             ret = "/" + st.top() + ret;
             st.pop();
         }
-        if(ret ==""){
-            ret ="/";
+        if (ret == "") {
+            ret = "/";
         }
         return ret;
     }
