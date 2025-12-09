@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isValidSudoku(vector<vector<char>>& board) {
         int i, j, k, l;
-        map<char, bool> visited;
+        unordered_map<char, bool> visited;
 
         for (i = 0; i < 9; i++) {
             visited.clear();
