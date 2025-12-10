@@ -6,21 +6,25 @@ class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
         lli i, j, n, mx;
+        unordered_map<char, bool> visited;
         n = s.size();
+        if(n==1){
+            return 1;
+        }
         mx = 0;
-        for (i = 0; i < n; i++) {
-            unordered_map<char, bool> visited;
-            for (j = i; j < n; j++) {
-                if (visited[s[j]]) {
-                    mx = max(mx, j - i);
-                    break;
-                }
-                visited[s[j]] = true;
-            }
-            if (j == n) {
-                mx = max(mx, j - i);
+        i = 0;
+        j = 0;
+        while (i < n) {
+            if (!visited[s[i]]) {
+                visited[s[i]] = true;
+                i++;
+            } else {
+                mx = max(mx, i - j);
+                visited[s[j]] = false;
+                j++;
             }
         }
+        mx = max(mx, i - j);
         return mx;
     }
 };
