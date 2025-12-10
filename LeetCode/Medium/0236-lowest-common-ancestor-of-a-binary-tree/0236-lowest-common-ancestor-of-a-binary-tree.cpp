@@ -7,42 +7,22 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
 class Solution {
 public:
-    unordered_map<TreeNode*,TreeNode*>ancestor;
-    unordered_map<TreeNode*,bool>ancestorP;
-    void lca_dfs(TreeNode* root){
-        if(root == nullptr){
-            return;
-        }
-        if(root->left != nullptr){
-            ancestor[root->left] = root;
-        }
-        if(root->right != nullptr){
-            ancestor[root->right]=root;
-        }
-        lca_dfs(root->left);
-        lca_dfs(root->right);
-    }
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        int i,n;
-        if(root == nullptr){
-            return NULL;
-        }
-        ancestor[root] = NULL;
-        lca_dfs(root);
+        // Base cases
+        if (root == nullptr) return nullptr;
+        if (root == p || root == q) return root;
 
-        while(p != nullptr){
-            ancestorP[p] = true;
-            p = ancestor[p];
-        }
-        while(q!=nullptr){
-            if(ancestorP[q]){
-                return q;
-            }
-            q = ancestor[q];
-        }
-        return root;
+        // Search in left and right subtrees
+        TreeNode* left = lowestCommonAncestor(root->left, p, q);
+        TreeNode* right = lowestCommonAncestor(root->right, p, q);
 
+        // If p and q found in different subtrees -> root is LCA
+        if (left && right) return root;
+
+        // Otherwise return the non-null child
+        return left ? left : right;
     }
 };
