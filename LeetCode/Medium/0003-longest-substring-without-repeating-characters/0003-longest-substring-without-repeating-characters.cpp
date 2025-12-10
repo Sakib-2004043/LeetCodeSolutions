@@ -9,13 +9,13 @@ public:
         n = s.size();
         mx = 0;
         for (i = 0; i < n; i++) {
-            map<char, lli> m;
+            unordered_map<char, bool> visited;
             for (j = i; j < n; j++) {
-                if (m[s[j]] == 1) {
+                if (visited[s[j]]) {
                     mx = max(mx, j - i);
                     break;
                 }
-                m[s[j]]++;
+                visited[s[j]] = true;
             }
             if (j == n) {
                 mx = max(mx, j - i);
