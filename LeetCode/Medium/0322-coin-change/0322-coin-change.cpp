@@ -1,7 +1,7 @@
 class Solution {
 public:
     int dp[10010];
-    int coinCounter(vector<int>coins, int amount) {
+    int coinCounter(vector<int>& coins, int amount) {
         if (amount == 0) {
             return 0;
         }
