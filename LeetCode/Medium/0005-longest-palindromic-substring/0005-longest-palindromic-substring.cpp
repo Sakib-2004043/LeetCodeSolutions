@@ -1,50 +1,43 @@
 class Solution {
 public:
     string longestPalindrome(string s) {
-        int i, j, k, n, ans, counter;
-        string retString;
-        n = s.size();
+        int n = s.size();
+        if (n <= 1) return s;
 
-        ans = 0;
-        for (i = 0; i < n; i++) {
-            counter = 1;
-            string tempString = "";
-            tempString += s[i];
-            for (j = i + 1, k = i - 1; j < n && k >= 0; j++, k--) {
-                if (s[j] == s[k]) {
-                    counter += 2;
-                    tempString = s[k] + tempString + s[j];
-                } else {
-                    goto ff1;
+        int start = 0;    // starting index of longest palindrome
+        int maxLen = 1;   // length of longest palindrome
+
+        for (int i = 0; i < n; i++) {
+
+            // --------- ODD length palindromes ----------
+            int left = i;
+            int right = i;
+
+            while (left >= 0 && right < n && s[left] == s[right]) {
+                int len = right - left + 1;
+                if (len > maxLen) {
+                    start = left;
+                    maxLen = len;
                 }
+                left--;
+                right++;
             }
-        ff1:;
-            if (counter > ans) {
-                ans = counter;
-                retString = tempString;
+
+            // --------- EVEN length palindromes ----------
+            left = i;
+            right = i + 1;
+
+            while (left >= 0 && right < n && s[left] == s[right]) {
+                int len = right - left + 1;
+                if (len > maxLen) {
+                    start = left;
+                    maxLen = len;
+                }
+                left--;
+                right++;
             }
         }
-        // cout << "Prev : " << ans << endl;
 
-        for (i = 0; i < n; i++) {
-            counter = 0;
-            string tempString = "";
-            for (j = i + 1, k = i; j < n && k >= 0; j++, k--) {
-
-                if (s[j] == s[k]) {
-                    counter += 2;
-                    tempString = s[k] + tempString + s[j];
-                } else {
-                    goto ff2;
-                }
-            }
-        ff2:;
-            if (counter > ans) {
-                ans = counter;
-                retString = tempString;
-            }
-        }
-        // cout << "Next : " << ans << endl;
-        return retString;
+        return s.substr(start, maxLen);
     }
 };
