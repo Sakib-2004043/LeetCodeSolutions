@@ -19,7 +19,7 @@ public:
             }
             if (flag)
                 ans.push_back(par);
-            cout<<par<<endl;
+            // cout<<par<<endl;
         } while (next_permutation(par.begin(), par.end()));
         return ans;
     }
