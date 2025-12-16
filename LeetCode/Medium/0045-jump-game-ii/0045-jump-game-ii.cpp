@@ -3,7 +3,7 @@ public:
     int jump(vector<int>& nums) {
         int i, n, ans;
         n = nums.size();
-        vector<int> minJump(n + 5, INT_MAX);
+        vector<int> minJump(n + 5, 10100);
         minJump[0] = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 1; j <= nums[i] && i + j < n; j++) {
