@@ -1,40 +1,37 @@
 class Solution {
 public:
     int longestValidParentheses(string s) {
-        int i, n, left, right, len, ptr;
-        n = s.size();
-        left = 0, right = 0;
-        ptr = 0, len = 0;
-        for (i = 0; i < n; i++) {
-            if (s[i] == '(')
-                left++;
-            else
-                right++;
-            if(right>left){
-                right=0;
-                left=0;
-                ptr = i+1;
-            }
-            else if(left==right){
-                len = max(len,i-ptr+1);
-            }
-        }
-        left = 0, right = 0;
-        ptr = n;
-        for (i = n-1; i >=0; i--) {
-            if (s[i] == '(')
-                left++;
-            else
-                right++;
-            if(right<left){
-                right=0;
-                left=0;
-                ptr = i;
-            }
-            else if(left==right){
-                len = max(len,ptr-i);
+        int n = s.size();
+        int maxLen = 0;
+
+        // Left → Right pass
+        int leftCount = 0, rightCount = 0;
+        for (int i = 0; i < n; i++) {
+            if (s[i] == '(') leftCount++;
+            else rightCount++;
+
+            if (leftCount == rightCount) {
+                // Update max length when balanced
+                maxLen = max(maxLen, 2 * rightCount);
+            } else if (rightCount > leftCount) {
+                // Reset counters when invalid
+                leftCount = rightCount = 0;
             }
         }
-        return len;
+
+        // Right → Left pass (to catch unmatched '(' at the end)
+        leftCount = rightCount = 0;
+        for (int i = n - 1; i >= 0; i--) {
+            if (s[i] == '(') leftCount++;
+            else rightCount++;
+
+            if (leftCount == rightCount) {
+                maxLen = max(maxLen, 2 * leftCount);
+            } else if (leftCount > rightCount) {
+                leftCount = rightCount = 0;
+            }
+        }
+
+        return maxLen;
     }
 };
