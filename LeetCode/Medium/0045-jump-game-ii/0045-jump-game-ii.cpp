@@ -1,15 +1,18 @@
 class Solution {
 public:
     int jump(vector<int>& nums) {
-        int i, n, ans;
+        int i, n, end, farthest, jump;
         n = nums.size();
-        vector<int> minJump(n + 5, 10100);
-        minJump[0] = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 1; j <= nums[i] && i + j < n; j++) {
-                minJump[i + j] = min(minJump[i + j], minJump[i] + 1);
+        jump = 0, end = 0;
+        farthest = 0;
+        for (i = 0; i < n-1; i++) {
+            farthest = max(farthest, nums[i] + i);
+            if (i == end) {
+                // cout<<i<<endl;
+                jump++;
+                end = farthest;
             }
         }
-        return minJump[n - 1];
+        return jump;
     }
 };
