@@ -1,25 +1,29 @@
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
-        int i, n, j;
-        string ans = "";
-        n = strs.size();
-        for (i = 0; i < n; i++) {
-            if (strs[i] == "")
-                break;
-            char c = strs[0][i];
-            bool present = true;
-            for (j = 1; j < n; j++) {
-                if (strs[j][i] != c) {
-                    present = false;
-                    break;
-                }
+        // If array is empty, return ""
+        if (strs.size() == 0) return "";
+
+        // Take first string as prefix
+        string prefix = strs[0];
+
+        // Compare prefix with each string
+        for (int i = 1; i < strs.size(); i++) {
+            int j = 0;
+
+            // Compare characters
+            while (j < prefix.length() && j < strs[i].length()
+                   && prefix[j] == strs[i][j]) {
+                j++;
             }
-            if (present) {
-                ans += c;
-            } else
-                break;
+
+            // Reduce prefix
+            prefix = prefix.substr(0, j);
+
+            // If prefix becomes empty, no common prefix exists
+            if (prefix == "") return "";
         }
-        return ans;
+
+        return prefix;
     }
 };
