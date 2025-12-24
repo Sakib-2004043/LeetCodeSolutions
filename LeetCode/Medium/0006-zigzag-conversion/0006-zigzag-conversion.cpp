@@ -1,23 +1,21 @@
 class Solution {
 public:
     string convert(string s, int numRows) {
-        if(numRows==1){
+        if (numRows == 1 || numRows >= s.size()) {
             return s;
         }
-        int i, n, gap, k, row;
-        string ans = "";
-        n = s.size();
-        gap = numRows * 2 - 2;
-        k = gap;
-        for (row = 0; row < numRows; row++) {
-            for (i = row; i < n; i += gap) {
-                ans += s[i];
-                if (i + k < n && row != 0 && row != numRows - 1) {
-                    ans += s[i + k];
+        int n = s.size();
+        int cycle = 2 * numRows - 2;
+        string result;
+        for (int row = 0; row < numRows; row++) {
+            for (int i = row; i < n; i += cycle) {
+                result += s[i];
+                int diagonal = i + cycle - 2 * row;
+                if (row != 0 && row != numRows - 1 && diagonal < n) {
+                    result += s[diagonal];
                 }
             }
-            k -= 2;
         }
-        return ans;
+        return result;
     }
 };
