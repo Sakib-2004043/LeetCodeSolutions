@@ -16,7 +16,7 @@ public:
         if (!node) return nullptr;
 
         // Mapping original node value → cloned node pointer
-        unordered_map<int, Node*> cloneMap;
+        map<int, Node*> cloneMap;
 
         // BFS queue
         queue<Node*> q;
