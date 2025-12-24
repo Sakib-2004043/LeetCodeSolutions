@@ -1,38 +1,30 @@
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        int i, n;
         vector<int> v;
-        // n = lists.size();
 
+        // Step 1: collect all values
         for (auto head : lists) {
-            while (head != nullptr) {
+            while (head) {
                 v.push_back(head->val);
                 head = head->next;
             }
         }
 
-        sort(v.begin(),v.end());
+        if (v.empty()) return nullptr; // handle empty input
 
-        ListNode* newHead = NULL;
-        ListNode* curNode = NULL;
-        
-        for(auto x:v){
-            if(newHead == NULL){
-                newHead = new ListNode();
-                newHead->val = x;
-                newHead->next = NULL;
-                curNode = newHead;
-            }
-            else{
-                ListNode* newNode = new ListNode();
-                newNode->val=x;
-                newNode->next=NULL;
-                curNode->next=newNode;
-                curNode = newNode;
-            }
-            
+        // Step 2: sort values
+        sort(v.begin(), v.end());
+
+        // Step 3: build new linked list efficiently
+        ListNode* newHead = new ListNode(v[0]); // directly set value
+        ListNode* curNode = newHead;
+
+        for (size_t i = 1; i < v.size(); ++i) {
+            curNode->next = new ListNode(v[i]); // create node with value
+            curNode = curNode->next;
         }
+
         return newHead;
     }
 };
