@@ -1,13 +1,20 @@
 class Solution {
 public:
     int hIndex(vector<int>& citations) {
-        sort(citations.rbegin(), citations.rend());
-        int ans = 0;
-        for (int i = 0; i < citations.size(); i++) {
-            if (citations[i] > ans) {
-                ans++;
-            }
+        int n = citations.size();
+        vector<int> bucket(n + 1, 0);
+        for (int c : citations) {
+            if (c >= n)
+                bucket[n]++;
+            else
+                bucket[c]++;
         }
-        return ans;
+        int papers = 0;
+        for (int i = n; i >= 0; i--) {
+            papers += bucket[i];
+            if (papers >= i)
+                return i;
+        }
+        return 0;
     }
 };
