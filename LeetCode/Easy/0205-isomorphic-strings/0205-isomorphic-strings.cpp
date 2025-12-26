@@ -3,7 +3,8 @@ public:
     bool isIsomorphic(string s, string t) {
         unordered_map<char, char> s_to_t;
         unordered_map<char, char> t_to_s;
-        for (int i = 0; i < s.size(); i++) {
+        int n = s.size();
+        for (int i = 0; i < n; i++) {
             if (!s_to_t.count(s[i])) {
                 s_to_t[s[i]] = t[i];
             } else if (s_to_t[s[i]] != t[i]) {
