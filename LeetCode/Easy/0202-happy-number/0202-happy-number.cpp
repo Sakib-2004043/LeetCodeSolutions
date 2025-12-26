@@ -17,7 +17,7 @@ public:
             // cout << n << endl;
             n = squareSum(n);
             k++;
-            if (k == 1000) {
+            if (k == 100) {
                 break;
             }
         }
