@@ -1,27 +1,18 @@
 class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
-        int sum, ans, mx, n;
-        vector<int> suffix_sum;
-        n = gas.size();
-        sum = 0;
-        for (int i = 0; i < n; i++) {
-            // cout << gas[i] - cost[i] << " ";
-            suffix_sum.push_back(gas[i] - cost[i]);
-            sum += (gas[i] - cost[i]);
-        }
-        if (sum < 0) {
-            return -1;
-        }
-        mx = suffix_sum[n - 1];
-        ans = n - 1;
-        for (int i = n - 2; i >= 0; i--) {
-            suffix_sum[i] += suffix_sum[i + 1];
-            if (suffix_sum[i] >= mx) {
-                mx = suffix_sum[i];
-                ans = i;
+        int total = 0; // total gas - cost
+        int tank = 0;  // current tank
+        int start = 0; // candidate start index
+        for (int i = 0; i < gas.size(); i++) {
+            int diff = gas[i] - cost[i];
+            total += diff;
+            tank += diff;
+            if (tank < 0) {
+                start = i + 1; // cannot start anywhere before this
+                tank = 0;
             }
         }
-        return ans;
+        return total >= 0 ? start : -1;
     }
 };
