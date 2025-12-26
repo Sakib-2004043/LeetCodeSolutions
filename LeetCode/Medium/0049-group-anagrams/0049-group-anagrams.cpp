@@ -10,7 +10,7 @@ public:
             sort(temp.begin(), temp.end());
             angm[temp].push_back(strs[i]);
         }
-        for (auto v : angm) {
+        for (auto &v : angm) {
             ans.push_back(v.second);
         }
         return ans;
