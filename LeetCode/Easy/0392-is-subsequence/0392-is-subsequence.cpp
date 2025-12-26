@@ -7,7 +7,6 @@ public:
                 j++;
             }
         }
-        cout<<j;
         return j == s.size();
     }
 };
