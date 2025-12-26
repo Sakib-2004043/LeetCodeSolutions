@@ -1,11 +1,11 @@
 class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
-        int i, sum, ans, mx;
+        int i, sum, ans;
         vector<int> suffix_sum;
-        sum = 0, mx = 0;
+        sum = 0;
         for (i = 0; i < gas.size(); i++) {
-            cout << gas[i] - cost[i] << " ";
+            // cout << gas[i] - cost[i] << " ";
             suffix_sum.push_back(gas[i] - cost[i]);
             sum += (gas[i] - cost[i]);
         }
