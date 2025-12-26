@@ -1,9 +1,6 @@
 class Solution {
 public:
     bool wordPattern(string pattern, string s) {
-        // if (pattern == s && s.size() > 1) {
-        //     return false;
-        // }
         int i, j, n;
         unordered_map<string, char> s_c;
         unordered_map<char, string> c_s;
@@ -19,7 +16,6 @@ public:
                 temp += s[i];
                 i++;
             }
-            // cout << temp << " " << pattern[j] << endl;
             if (s_c.count(temp) == 0) {
                 s_c[temp] = pattern[j];
             } else if (s_c[temp] != pattern[j]) {
@@ -35,7 +31,6 @@ public:
         if(i==n && j==pattern.size()){
             return true;
         }
-        // cout<<i<<" "<<j;
         return false;;
     }
 };
