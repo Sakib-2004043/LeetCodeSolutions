@@ -3,23 +3,22 @@ public:
     int squareSum(int n) {
         int sum = 0;
         while (n) {
-            sum = sum + (n % 10) * (n % 10);
+            int d = n % 10;
+            sum += d * d;
             n /= 10;
         }
         return sum;
     }
+
     bool isHappy(int n) {
-        int k = 0;
-        while (true) {
-            if (n == 1) {
-                return true;
-            }
-            n = squareSum(n);
-            k++;
-            if (k == 100) {
-                break;
-            }
+        int slow = n;
+        int fast = squareSum(n);
+
+        while (fast != 1 && slow != fast) {
+            slow = squareSum(slow);
+            fast = squareSum(squareSum(fast));
         }
-        return false;
+
+        return fast == 1;
     }
 };
