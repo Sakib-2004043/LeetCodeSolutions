@@ -14,7 +14,6 @@ public:
             if (n == 1) {
                 return true;
             }
-            // cout << n << endl;
             n = squareSum(n);
             k++;
             if (k == 100) {
