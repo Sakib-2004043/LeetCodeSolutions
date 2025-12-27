@@ -16,7 +16,6 @@ public:
                 double yCut = (x1 * y2 - x2 * y1) / (x1 - x2);
                 visitedPoint[{slope, yCut}]++;
                 ans = max(ans, visitedPoint[{slope, yCut}]);
-                cout << slope << " " << yCut << endl;
             }
         }
         return ++ans;
