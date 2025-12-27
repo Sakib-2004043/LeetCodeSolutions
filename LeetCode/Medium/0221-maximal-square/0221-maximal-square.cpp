@@ -21,14 +21,7 @@ public:
                 mn = min(mn, area[i - 1][j - 1]);
                 area[i][j] = mn + 1;
                 ans = max(ans, area[i][j]);
-                // cout<<i<<" "<<j<<" "<<ans<<endl;
             }
-        }
-        for (auto v : area) {
-            for (auto x : v) {
-                cout << x << " ";
-            }
-            cout << endl;
         }
         return ans * ans;
     }
