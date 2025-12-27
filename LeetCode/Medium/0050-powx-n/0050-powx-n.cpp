@@ -1,18 +1,13 @@
 class Solution {
 public:
+    double myFun(double num, long long power) {
+        if (power == 1) {
+            return num;
+        }
+        double half = myFun(num, power / 2);
+        return power % 2 ? half * half * num : half * half;
+    }
     double myPow(double x, long long n) {
-        double result = 1.0;
-        if (n < 0) {
-            x = 1 / x;
-            n = -n;
-        }
-        while (n) {
-            if (n & 1) {
-                result *= x;
-            }
-            x*=x;
-            n >>= 1;
-        }
-        return result;
+        return n > 0 ? myFun(x, n) : myFun(1 / x, -n);
     }
 };
