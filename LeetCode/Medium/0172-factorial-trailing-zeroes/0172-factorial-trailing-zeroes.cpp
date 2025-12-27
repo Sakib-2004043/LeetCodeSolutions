@@ -1,9 +1,9 @@
 class Solution {
 public:
     int trailingZeroes(int n) {
-        int ans = 0;
-        for(int i=5;i<=n;i*=5){
-            ans += n/i;
+        int32_t ans = 0;
+        for (int32_t i = 5; i <= n; i *= 5) {
+            ans += n / i;
         }
         return ans;
     }
