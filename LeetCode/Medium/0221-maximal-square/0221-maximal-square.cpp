@@ -13,11 +13,22 @@ public:
                     ans = max(ans, area[i][j]);
                     continue;
                 }
+                if( matrix[i][j] == '0'){
+                    area[i][j] = 0;
+                    continue;
+                }
                 int mn = min(area[i - 1][j], area[i][j - 1]);
                 mn = min(mn, area[i - 1][j - 1]);
                 area[i][j] = mn + 1;
-                ans = max(ans, mn);
+                ans = max(ans, area[i][j]);
+                // cout<<i<<" "<<j<<" "<<ans<<endl;
             }
+        }
+        for (auto v : area) {
+            for (auto x : v) {
+                cout << x << " ";
+            }
+            cout << endl;
         }
         return ans * ans;
     }
