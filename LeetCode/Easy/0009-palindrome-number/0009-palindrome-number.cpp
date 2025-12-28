@@ -10,7 +10,6 @@ public:
             n = n * 10 + (m % 10);
             m /= 10;
         }
-        // cout<<n;
         return x == n;
     }
 };
