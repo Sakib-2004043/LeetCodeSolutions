@@ -1,17 +1,24 @@
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
-        set<vector<int>> unique;
+        vector<vector<int>> ans;
         sort(nums.begin(), nums.end());
         int n = nums.size();
+
         for (int i = 0; i < n; i++) {
+            if (i > 0 && nums[i] == nums[i - 1])
+                continue; // skip duplicates
             int left = i + 1, right = n - 1;
             while (left < right) {
                 int sum = nums[i] + nums[left] + nums[right];
                 if (sum == 0) {
-                    vector<int> triplet = {nums[i], nums[left], nums[right]};
-                    unique.insert(triplet);
-                    left++, right--;
+                    ans.push_back({nums[i], nums[left], nums[right]});
+                    while (left < right && nums[left] == nums[left + 1])
+                        left++; // skip duplicates
+                    while (left < right && nums[right] == nums[right - 1])
+                        right--; // skip duplicates
+                    left++;
+                    right--;
                 } else if (sum < 0) {
                     left++;
                 } else {
@@ -19,10 +26,6 @@ public:
                 }
             }
         }
-        // copy set to vector
-        vector<vector<int>> ans;
-        for (auto& v : unique)
-            ans.push_back(v);
         return ans;
     }
 };
