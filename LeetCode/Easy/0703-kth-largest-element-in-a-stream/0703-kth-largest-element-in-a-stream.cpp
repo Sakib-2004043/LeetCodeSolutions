@@ -1,29 +1,24 @@
 class KthLargest {
-public:
-    vector<int> nums;
+private:
+    priority_queue<int, vector<int>, greater<int>> pq; // min-heap
     int k;
-    KthLargest(int k, vector<int>& nums) {
-        sort(nums.rbegin(), nums.rend());
-        this->nums = nums;
-        this->k = k;
-    }
 
-    int add(int val) {
-        int left = 0;
-        int right = nums.size() - 1;
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-            if (val > nums[mid]) {
-                right = mid - 1;
-            } else {
-                left = mid + 1;
-            }
+public:
+    KthLargest(int k, vector<int>& nums) {
+        this->k = k;
+        for (int n : nums) {
+            int ignore = add(n); // use add() to maintain heap
+            // Sorting During Insertion
         }
-        nums.insert(nums.begin() + left, val);
-        return nums[k - 1];
+    }
+    int add(int val) {
+        pq.push(val);
+        if (pq.size() > k) {
+            pq.pop(); // keep only k largest
+        }
+        return pq.top(); // k-th largest
     }
 };
-
 /**
  * Your KthLargest object will be instantiated and called as such:
  * KthLargest* obj = new KthLargest(k, nums);
