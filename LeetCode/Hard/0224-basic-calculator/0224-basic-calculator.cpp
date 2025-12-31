@@ -1,48 +1,30 @@
 class Solution {
 public:
     int calculate(string s) {
-        int i, n, k, ans;
-        stack<string> st;
-        s = '(' + s + ')';
-        ans = 0;
-        for (i = 0; i < s.size(); i++) {
-            string digits = "";
-            while (i < s.size() && isdigit(s[i])) {
-                digits = digits + s[i];
-                i++;
-            }
-            if (digits != "") {
-                st.push(digits);
-            }
-            if (isspace(s[i])) {
-                continue;
-            }
-            if (s[i] != ')') {
-                st.push(string(1, s[i]));
-                continue;
-            }
-            long long int num = 0;
-            long long k = 1, tempAns = 0;
-            while (st.top() != "(") {
-                if (st.top() == "+") {
-                    tempAns = tempAns + num;
-                    num = 0, k = 0;
-                } else if (st.top() == "-") {
-                    tempAns = tempAns - num;
-                    num = 0, k = 0;
-                } else {
-                    num = stoll(st.top());
-                    k = 1;
+        long long int sum = 0;
+        int sign = 1;
+        stack<pair<int, int>> st;
+        for (int i = 0; i < s.size(); i++) {
+            if (isdigit(s[i])) {
+                long long int num = 0;
+                while (i < s.size() && isdigit(s[i])) {
+                    num = num * 10 + (s[i] - '0');
+                    i++;
                 }
+                i--;
+                sum += num * sign;
+                sign = 1;
+            } else if (s[i] == '(') {
+                st.push({sum, sign});
+                sum = 0;
+                sign = 1;
+            } else if (s[i] == ')') {
+                sum = st.top().first + (st.top().second * sum);
                 st.pop();
-                if (k && st.top() == "(") {
-                    st.push("+");
-                }
+            } else if (s[i] == '-') {
+                sign *= -1;
             }
-            st.pop();
-            st.push(to_string(tempAns));
-            ans = tempAns;
         }
-        return ans;
+        return sum;
     }
 };
