@@ -31,7 +31,6 @@ public:
                     tempAns = tempAns - num;
                     num = 0, k = 0;
                 } else {
-                    cout<<st.top()<<" ";
                     num = stoll(st.top());
                     k = 1;
                 }
@@ -42,7 +41,6 @@ public:
             }
             st.pop();
             st.push(to_string(tempAns));
-            cout << st.top() << " ";
             ans = tempAns;
         }
         return ans;
