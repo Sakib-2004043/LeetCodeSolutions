@@ -19,14 +19,6 @@ private:
             node = node->left;
         }
     }
-    void display(){
-        stack<TreeNode*>disp = st;
-        while(!disp.empty()){
-            cout<<disp.top()->val<<" ";
-            disp.pop();
-        }
-        cout<<endl;
-    }
 
 public:
     BSTIterator(TreeNode* root) {
@@ -35,14 +27,11 @@ public:
     }
 
     int next() {
-        display();
         TreeNode* curNode = st.top();
         st.pop();
         if (curNode->right != nullptr) {
-            // st.push(curNode->right);
             makeStack(curNode->right);
         }
-        // cout<<st.size()<<" ";
         return curNode->val;
     }
 
