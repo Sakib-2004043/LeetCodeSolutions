@@ -1,36 +1,39 @@
 class RandomizedSet {
 private:
-    set<int> rst;
+    vector<int> data;
+    unordered_map<int, int> index; // value -> index in data
 
 public:
-    RandomizedSet() { rst = set<int>(); }
-
     bool insert(int val) {
-        if (rst.count(val)) {
+        if (index.count(val))
             return false;
-        }
-        rst.insert(val);
+
+        data.push_back(val);
+        index[val] = data.size() - 1;
         return true;
     }
 
     bool remove(int val) {
-        if (!rst.count(val)) {
+        if (!index.count(val)) {
             return false;
         }
-        rst.erase(val);
+
+        int idx = index[val];
+        int lastVal = data.back();
+
+        // Move last element to idx
+        data[idx] = lastVal;
+        index[lastVal] = idx;
+
+        // Remove last element
+        data.pop_back();
+        index.erase(val);
+
         return true;
     }
 
     int getRandom() {
-        vector<int> v(rst.begin(), rst.end());
-        return v[rand() % v.size()];
+        int randomIndex = rand() % data.size();
+        return data[randomIndex];
     }
 };
-
-/**
- * Your RandomizedSet object will be instantiated and called as such:
- * RandomizedSet* obj = new RandomizedSet();
- * bool param_1 = obj->insert(val);
- * bool param_2 = obj->remove(val);
- * int param_3 = obj->getRandom();
- */
