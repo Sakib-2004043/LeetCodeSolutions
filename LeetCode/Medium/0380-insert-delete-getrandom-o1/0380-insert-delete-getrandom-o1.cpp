@@ -1,7 +1,7 @@
 class RandomizedSet {
 private:
     vector<int> data;
-    unordered_map<int, int> index; // value -> index in data
+    unordered_map<int, int> index;
 
 public:
     bool insert(int val) {
