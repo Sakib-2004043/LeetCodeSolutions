@@ -22,7 +22,6 @@ private:
 
 public:
     BSTIterator(TreeNode* root) {
-        st = stack<TreeNode*>();
         makeStack(root);
     }
 
