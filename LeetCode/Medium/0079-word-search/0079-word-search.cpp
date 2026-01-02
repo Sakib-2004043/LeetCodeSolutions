@@ -10,7 +10,7 @@ public:
             ans = true;
             return;
         }
-        if (curWord.size() >= targetWord.size()) {
+        if (curWord[curWord.size()-1] != targetWord[curWord.size()-1]) {
             return;
         }
         visited[row][col] = true;
