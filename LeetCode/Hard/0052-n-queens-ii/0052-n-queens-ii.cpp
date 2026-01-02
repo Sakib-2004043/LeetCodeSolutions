@@ -1,6 +1,6 @@
 class Solution {
 private:
-    vector<vector<string>> ans;
+    int ans = 0;
     bool isSafe(vector<string>& board, int row, int col) {
         int n = board.size();
         for (int i = 0; i < n; i++) {
@@ -22,8 +22,8 @@ private:
     }
     void makePosition(vector<string>& board, int row) {
         int n = board.size();
-        if(row == n){
-            ans.push_back(board);
+        if (row == n) {
+            ans++;
             return;
         }
         for (int col = 0; col < n; col++) {
@@ -39,6 +39,6 @@ public:
     int totalNQueens(int n) {
         vector<string> board(n, string(n, '.'));
         makePosition(board, 0);
-        return ans.size();
+        return ans;
     }
 };
