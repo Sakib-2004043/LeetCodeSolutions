@@ -1,11 +1,13 @@
 class KthLargest {
 public:
-    vector<int> nums;
+    vector<int> nums; // descending order
     int k;
-    KthLargest(int k, vector<int>& nums) {
-        sort(nums.rbegin(), nums.rend());
-        this->nums = nums;
+
+    KthLargest(int k, vector<int>& arr) {
         this->k = k;
+        for (int val : arr) {
+            add(val); // reuse add() safely
+        }
     }
 
     int add(int val) {
@@ -19,13 +21,12 @@ public:
                 left = mid + 1;
             }
         }
-        nums.insert(nums.begin() + left, val);
-        return nums[k - 1];
+        nums.insert(nums.begin() + left, val); // insert in descending order
+
+        // Only return k-th largest if we have enough elements
+        if (nums.size() >= k)
+            return nums[k - 1];
+        else
+            return nums.back(); // return largest available for now
     }
 };
-
-/**
- * Your KthLargest object will be instantiated and called as such:
- * KthLargest* obj = new KthLargest(k, nums);
- * int param_1 = obj->add(val);
- */
