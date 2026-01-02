@@ -1,43 +1,40 @@
 class Solution {
 private:
-    string targetWord;
-    bool ans = false;
-    vector<vector<bool>> visited;
+    int rows, cols;
+
+    bool dfs(vector<vector<char>>& board, string& word, int r, int c, int k) {
+
+        // all characters matched
+        if (k == word.size())
+            return true;
+
+        // out of bounds or mismatch
+        if (r < 0 || c < 0 || r >= rows || c >= cols || board[r][c] != word[k])
+            return false;
+
+        char temp = board[r][c];
+        board[r][c] = '#'; // mark visited
+
+        bool found = dfs(board, word, r + 1, c, k + 1) ||
+                     dfs(board, word, r - 1, c, k + 1) ||
+                     dfs(board, word, r, c + 1, k + 1) ||
+                     dfs(board, word, r, c - 1, k + 1);
+
+        board[r][c] = temp; // backtrack
+        return found;
+    }
 
 public:
-    void search(vector<vector<char>>& board, string curWord, int row, int col) {
-        if (curWord == targetWord) {
-            ans = true;
-            return;
-        }
-        if (curWord[curWord.size()-1] != targetWord[curWord.size()-1]) {
-            return;
-        }
-        visited[row][col] = true;
-        if (row + 1 < board.size() && !visited[row + 1][col]) {
-            search(board, curWord + board[row + 1][col], row + 1, col);
-        }
-        if (row - 1 >= 0 && !visited[row - 1][col]) {
-            search(board, curWord + board[row - 1][col], row - 1, col);
-        }
-        if (col + 1 < board[0].size() && !visited[row][col + 1]) {
-            search(board, curWord + board[row][col + 1], row, col + 1);
-        }
-        if (col - 1 >= 0 && !visited[row][col - 1]) {
-            search(board, curWord + board[row][col - 1], row, col - 1);
-        }
-        visited[row][col] = false;
-    }
     bool exist(vector<vector<char>>& board, string word) {
-        this->targetWord = word;
-        int row = board.size();
-        int col = board[0].size();
-        visited.assign(row, vector<bool>(col, false));
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                search(board, string(1, board[i][j]), i, j);
+        rows = board.size();
+        cols = board[0].size();
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (board[i][j] == word[0] && dfs(board, word, i, j, 0))
+                    return true;
             }
         }
-        return ans;
+        return false;
     }
 };
