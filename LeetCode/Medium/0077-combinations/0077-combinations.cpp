@@ -1,15 +1,13 @@
 class Solution {
 private:
-    int k, n;
-    vector<vector<int>> ans;
-    void getCombo(int idx, vector<int>& combo) {
+    void getCombo(int idx, int n, int k, vector<int>& combo, vector<vector<int>>& ans) {
         if (combo.size() == k) {
             ans.push_back(combo);
             return;
         }
         for (int i = idx; i <= n; i++) {
             combo.push_back(i);
-            getCombo(i + 1, combo);
+            getCombo(i + 1, n, k, combo, ans);
             combo.pop_back();
         }
     }
@@ -17,9 +15,8 @@ private:
 public:
     vector<vector<int>> combine(int n, int k) {
         vector<int> combo;
-        this->k = k;
-        this->n = n;
-        getCombo(1, combo);
+        vector<vector<int>> ans;
+        getCombo(1, n, k, combo, ans);
         return ans;
     }
 };
