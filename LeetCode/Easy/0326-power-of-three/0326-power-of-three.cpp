@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isPowerOfThree(int n) {
-        long double ans = log(n) / log(3);
-        return ans == round(ans) && n;
+        // 3^19 = 1162261467 is the largest power of 3 that fits in 32-bit int
+        return n > 0 && 1162261467 % n == 0;
     }
 };
