@@ -1,36 +1,28 @@
 class Solution {
 public:
+    bool solve(int i, int j, string &s, string &p) {
+        // If pattern is finished
+        if (j == p.size()) {
+            return i == s.size();
+        }
+
+        // Check current character match
+        bool firstMatch = (i < s.size()) &&
+                          (s[i] == p[j] || p[j] == '.');
+
+        // If next char is '*'
+        if (j + 1 < p.size() && p[j + 1] == '*') {
+            // zero occurrence OR one/more occurrence
+            return solve(i, j + 2, s, p) ||
+                   (firstMatch && solve(i + 1, j, s, p));
+        } 
+        // Normal case
+        else {
+            return firstMatch && solve(i + 1, j + 1, s, p);
+        }
+    }
+
     bool isMatch(string s, string p) {
-        int m = s.size(), n = p.size();
-        // dp[i][j] = true if s[0..i-1] matches p[0..j-1]
-        vector<vector<bool>> dp(m + 1, vector<bool>(n + 1, false));
-        dp[0][0] = true; // empty string matches empty pattern
-
-        // Initialize dp for patterns like a*, a*b*, a*b*c* matching empty
-        // string
-        for (int j = 1; j <= n; j++) {
-            if (p[j - 1] == '*' && j >= 2)
-                dp[0][j] = dp[0][j - 2];
-        }
-
-        for (int i = 1; i <= m; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (p[j - 1] == s[i - 1] || p[j - 1] == '.') {
-                    // current characters match
-                    dp[i][j] = dp[i - 1][j - 1];
-                } else if (p[j - 1] == '*') {
-                    // '*' matches zero of the preceding element
-                    dp[i][j] = dp[i][j - 2];
-                    // '*' matches one or more of preceding element
-                    if (p[j - 2] == s[i - 1] || p[j - 2] == '.') {
-                        dp[i][j] = dp[i][j] || dp[i - 1][j];
-                    }
-                } else {
-                    dp[i][j] = false;
-                }
-            }
-        }
-
-        return dp[m][n];
+        return solve(0, 0, s, p);
     }
 };
