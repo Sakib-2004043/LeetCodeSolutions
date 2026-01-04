@@ -3,7 +3,7 @@ private:
     set<vector<string>> ans;
     vector<string> words;
     unordered_map<string, bool> visited;
-    void makeSquare(vector<string>& square, int idx) {
+    void makeSquare(vector<string>& square) {
         if (square.size() == 2) {
             if (square[0][0] != square[1][0]) {
                 return;
@@ -22,7 +22,7 @@ private:
             if (visited[words[i]] == false) {
                 square.push_back(words[i]);
                 visited[words[i]] = true;
-                makeSquare(square, i + 1);
+                makeSquare(square);
                 square.pop_back();
                 visited[words[i]] = false;
             }  
@@ -33,7 +33,7 @@ public:
     vector<vector<string>> wordSquares(vector<string>& words) {
         this->words = words;
         vector<string> square;
-        makeSquare(square, 0);
+        makeSquare(square);
         return vector<vector<string>>(ans.begin(), ans.end());
     }
 };
