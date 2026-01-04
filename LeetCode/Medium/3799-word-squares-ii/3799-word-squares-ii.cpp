@@ -4,7 +4,6 @@ private:
     vector<string> words;
     unordered_map<string, bool> visited;
     void makeSquare(vector<string>& square, int idx) {
-        // cout << square.size() << " ";
         if (square.size() == 2) {
             if (square[0][0] != square[1][0]) {
                 return;
@@ -23,9 +22,7 @@ private:
             if (visited[words[i]] == false) {
                 square.push_back(words[i]);
                 visited[words[i]] = true;
-                // swap(words[i],words[idx]);
                 makeSquare(square, i + 1);
-                // swap(words[i],words[idx]);
                 square.pop_back();
                 visited[words[i]] = false;
             }  
@@ -37,10 +34,6 @@ public:
         this->words = words;
         vector<string> square;
         makeSquare(square, 0);
-        vector<vector<string>> result;
-        for (auto v : ans) {
-            result.push_back(v);
-        }
-        return result;
+        return vector<vector<string>>(ans.begin(), ans.end());
     }
 };
