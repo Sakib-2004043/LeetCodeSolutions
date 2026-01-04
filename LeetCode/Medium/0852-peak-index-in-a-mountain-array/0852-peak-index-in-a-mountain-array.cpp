@@ -5,7 +5,6 @@ public:
         int right = arr.size() - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            cout << left << " " << mid << " " << right << endl;
             if (mid > 0 && arr[mid - 1] < arr[mid] && arr[mid] > arr[mid + 1]) {
                 return mid;
             }
