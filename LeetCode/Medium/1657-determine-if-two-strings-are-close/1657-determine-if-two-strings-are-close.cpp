@@ -10,6 +10,9 @@ public:
             firstWord[word1[i]]++;
             secondWord[word2[i]]++;
         }
+        if(firstWord.size()!=secondWord.size()){
+            return false;
+        }
         for(auto x:firstWord){
             if(!secondWord.count(x.first)){
                 return false;
