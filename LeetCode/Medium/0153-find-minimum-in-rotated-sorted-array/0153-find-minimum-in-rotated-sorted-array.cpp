@@ -1,10 +1,17 @@
-#include<bits/stdc++.h>
-typedef long long lli;
-using namespace std;
 class Solution {
 public:
     int findMin(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
-        return nums[0];
+        int bgn, mid, end;
+        bgn = 0;
+        end = nums.size() - 1;
+        while (bgn < end) {
+            mid = bgn + (end - bgn) / 2;
+            if (nums[mid] > nums[end]) {
+                bgn = mid+1;
+            } else {
+                end = mid ;
+            }
+        }
+        return nums[bgn];
     }
 };
