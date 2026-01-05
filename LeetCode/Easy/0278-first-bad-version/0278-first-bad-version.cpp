@@ -18,7 +18,5 @@ public:
             }
         }
         return left;
-
-        return 1;
     }
 };
