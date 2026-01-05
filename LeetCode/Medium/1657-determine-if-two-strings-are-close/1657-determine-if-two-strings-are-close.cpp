@@ -24,7 +24,6 @@ public:
         }
         sort(vec1.begin(),vec1.end());
         sort(vec2.begin(),vec2.end());
-
         return vec1 == vec2;
     }
 };
