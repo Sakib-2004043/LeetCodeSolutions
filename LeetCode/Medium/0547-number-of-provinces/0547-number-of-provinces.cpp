@@ -3,14 +3,14 @@ private:
     vector<vector<int>> graph;
     vector<bool> visited;
     void bfs(int idx) {
-        queue<vector<int>> connection;
-        connection.push(graph[idx]);
+        queue<int> connection;
+        connection.push(idx);
         while (!connection.empty()) {
-            int n = connection.front().size();
-            for (int i = 0; i < n; i++) {
-                if (!visited[i] && connection.front()[i]) {
+            int row = connection.front();
+            for (int i = 0; i < graph.size(); i++) {
+                if (!visited[i] && graph[row][i]) {
                     visited[i] = true;
-                    connection.push(graph[i]);
+                    connection.push(i);
                 }
             }
             connection.pop();
