@@ -1,8 +1,7 @@
 class Solution {
 private:
-    vector<vector<int>> graph;
     vector<bool> visited;
-    void bfs(int idx) {
+    void bfs(vector<vector<int>>& graph, int idx) {
         queue<int> connection;
         connection.push(idx);
         while (!connection.empty()) {
@@ -19,7 +18,6 @@ private:
 
 public:
     int findCircleNum(vector<vector<int>>& isConnected) {
-        this->graph = isConnected;
         int n = isConnected.size();
         visited.assign(n + 5, false);
         int provinces = 0;
@@ -27,7 +25,7 @@ public:
             if (!visited[i]) {
                 visited[i] = true;
                 provinces++;
-                bfs(i);
+                bfs(isConnected, i);
             }
         }
         return provinces;
