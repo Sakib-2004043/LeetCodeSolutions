@@ -19,7 +19,7 @@ private:
 public:
     int findCircleNum(vector<vector<int>>& isConnected) {
         int n = isConnected.size();
-        visited.assign(n + 5, false);
+        visited.assign(n, false);
         int provinces = 0;
         for (int i = 0; i < n; i++) {
             if (!visited[i]) {
