@@ -1,13 +1,12 @@
 class Solution {
 private:
-    vector<vector<int>> ans;
-    void dfs(auto& graph, auto& result, int node) {
+    void dfs(auto& graph, auto& ans, auto& result, int node) {
         if (node == graph.size() - 1) {
             ans.push_back(result);
         }
         for (auto nextNode : graph[node]) {
             result.push_back(nextNode);
-            dfs(graph, result, nextNode);
+            dfs(graph, ans, result, nextNode);
             result.pop_back();
         }
     }
@@ -15,8 +14,9 @@ private:
 public:
     vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
         vector<int> result;
+        vector<vector<int>> ans;
         result.push_back(0);
-        dfs(graph, result, 0);
+        dfs(graph, ans, result, 0);
         return ans;
     }
 };
