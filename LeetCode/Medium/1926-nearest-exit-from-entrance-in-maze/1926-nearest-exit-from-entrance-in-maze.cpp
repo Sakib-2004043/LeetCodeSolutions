@@ -1,7 +1,7 @@
 class Solution {
 public:
     int nearestExit(vector<vector<char>>& maze, vector<int>& entrance) {
-        int i, j, row, col, steps, ans;
+        int row, col, steps, ans;
         queue<vector<int>> cells;
         row = maze.size();
         col = maze[0].size();
