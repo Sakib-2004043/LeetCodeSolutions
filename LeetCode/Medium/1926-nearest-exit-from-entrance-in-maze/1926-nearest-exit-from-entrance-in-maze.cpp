@@ -14,7 +14,6 @@ public:
             while (sz--) {
                 int x = cells.front()[0];
                 int y = cells.front()[1];
-                visited[x][y] = true;
                 if (cells.front() != entrance &&
                     (x == 0 || y == 0 || x == row - 1 || y == col - 1)) {
                     ans = steps;
