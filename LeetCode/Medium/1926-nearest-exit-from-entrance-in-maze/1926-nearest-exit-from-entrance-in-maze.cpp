@@ -17,7 +17,8 @@ public:
                 visited[x][y] = true;
                 if (cells.front() != entrance &&
                     (x == 0 || y == 0 || x == row - 1 || y == col - 1)) {
-                    ans = ans == -1 ? steps : min(ans, steps);
+                    ans = steps;
+                    goto last;
                 }
                 if (x > 0 && maze[x - 1][y] == '.' && !visited[x - 1][y]) {
                     cells.push({x - 1, y});
@@ -41,6 +42,7 @@ public:
             }
             steps++;
         }
+    last:;
         return ans;
     }
 };
