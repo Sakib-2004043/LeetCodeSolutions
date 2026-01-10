@@ -1,6 +1,4 @@
 class Solution {
-private:
-    // void bfs(auto& maze, )
 public:
     int nearestExit(vector<vector<char>>& maze, vector<int>& entrance) {
         int i, j, row, col, steps, ans;
@@ -20,8 +18,6 @@ public:
                 if (cells.front() != entrance &&
                     (x == 0 || y == 0 || x == row - 1 || y == col - 1)) {
                     ans = ans == -1 ? steps : min(ans, steps);
-                    ans = steps;
-                    goto last;
                 }
                 if (x > 0 && maze[x - 1][y] == '.' && !visited[x - 1][y]) {
                     cells.push({x - 1, y});
@@ -45,7 +41,6 @@ public:
             }
             steps++;
         }
-    last:;
         return ans;
     }
 };
