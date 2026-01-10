@@ -19,7 +19,7 @@ public:
                 visited[x][y] = true;
                 if (cells.front() != entrance &&
                     (x == 0 || y == 0 || x == row - 1 || y == col - 1)) {
-                    // ans = ans == -1 ? steps : min(ans, steps);
+                    ans = ans == -1 ? steps : min(ans, steps);
                     ans = steps;
                     goto last;
                 }
