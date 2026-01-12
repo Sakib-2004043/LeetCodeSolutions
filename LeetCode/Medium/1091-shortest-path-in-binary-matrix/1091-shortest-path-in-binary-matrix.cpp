@@ -10,6 +10,7 @@ public:
                                           {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
         queue<pair<int, int>> bfsQ;
         bfsQ.push({0, 0});
+        visited[0][0] = true;
         int steps = 1;
         while (!bfsQ.empty()) {
             int sz = bfsQ.size();
