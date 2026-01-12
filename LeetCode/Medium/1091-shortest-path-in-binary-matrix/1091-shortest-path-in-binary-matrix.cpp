@@ -1,10 +1,10 @@
 class Solution {
 public:
     int shortestPathBinaryMatrix(vector<vector<int>>& grid) {
-        if (grid[0][0] == 1) {
+        int n = grid.size();
+        if (grid[0][0] == 1 || grid[n - 1][n - 1] == 1) {
             return -1;
         }
-        int n = grid.size();
         vector<vector<bool>> visited(n, vector<bool>(n, false));
         vector<vector<int>> directions = {{0, 1}, {0, -1}, {1, 0},  {-1, 0},
                                           {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
@@ -17,7 +17,7 @@ public:
             while (sz--) {
                 auto [x, y] = bfsQ.front();
                 bfsQ.pop();
-                if (x + 1 == n && y + 1 == n && grid[x][y] == 0) {
+                if (x + 1 == n && y + 1 == n) {
                     return steps;
                 }
                 for (auto& dir : directions) {
