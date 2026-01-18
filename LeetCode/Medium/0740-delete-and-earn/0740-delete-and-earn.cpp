@@ -9,12 +9,7 @@ public:
         vector<int> ans(1e4 + 5, 0);
         int mx = ans[1] = points[1];
         for (int i = 2; i <= 1e4; i++) {
-            // if (points[i] != 0) {
             ans[i] = max(mx, ans[i - 2] + points[i]);
-            // } else {
-            //     ans[i] = mx;
-            // }
-            cout << i << " " << ans[i] << endl;
             mx = max(mx, ans[i]);
         }
         return mx;
