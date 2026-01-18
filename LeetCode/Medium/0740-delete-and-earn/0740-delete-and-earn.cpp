@@ -1,17 +1,17 @@
 class Solution {
 public:
     int deleteAndEarn(vector<int>& nums) {
-        unordered_map<int, int> points;
-        int n = nums.size();
-        for (int i = 0; i < n; i++) {
-            points[nums[i]] += nums[i];
+        vector<int> points(10001, 0);
+        for (int x : nums) {
+            points[x] += x;
         }
-        vector<int> ans(1e4 + 5, 0);
-        int mx = ans[1] = points[1];
-        for (int i = 2; i <= 1e4; i++) {
-            ans[i] = max(mx, ans[i - 2] + points[i]);
-            mx = max(mx, ans[i]);
+        int prev2 = 0; // dp[i-2]
+        int prev1 = 0; // dp[i-1]
+        for (int i = 0; i <= 10000; i++) {
+            int curr = max(prev1, prev2 + points[i]);
+            prev2 = prev1;
+            prev1 = curr;
         }
-        return mx;
+        return prev1;
     }
 };
