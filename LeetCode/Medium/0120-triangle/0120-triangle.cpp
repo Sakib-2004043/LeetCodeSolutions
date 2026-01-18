@@ -2,23 +2,22 @@ class Solution {
 public:
     int minimumTotal(vector<vector<int>>& triangle) {
         int n = triangle.size();
-
-        vector<int> preSum = triangle[0]; 
-
+        vector<int> preSum = triangle[0];
+        vector<int> newSum;
         for (int i = 1; i < n; i++) {
-            vector<int> newSum(i + 1, INT_MAX);
-
+            newSum.clear();
             for (int j = 0; j <= i; j++) {
-                if (j > 0)
-                    newSum[j] = min(newSum[j], preSum[j - 1] + triangle[i][j]);
-
-                if (j < preSum.size())
-                    newSum[j] = min(newSum[j], preSum[j] + triangle[i][j]);
+                int best = INT_MAX;
+                if (j < preSum.size()) {
+                    best = preSum[j];
+                }
+                if (j > 0) {
+                    best = min(best, preSum[j - 1]);
+                }
+                newSum.push_back(best + triangle[i][j]);
             }
-
-            preSum = newSum;
+            preSum.swap(newSum);
         }
-
         return *min_element(preSum.begin(), preSum.end());
     }
 };
