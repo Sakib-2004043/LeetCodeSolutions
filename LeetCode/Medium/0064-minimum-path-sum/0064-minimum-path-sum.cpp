@@ -6,7 +6,7 @@ public:
         col = grid[0].size();
         for (i = 0; i < row; i++) {
             for (j = 0; j < col; j++) {
-                if(!i&&!j){
+                if (!i && !j) {
                     continue;
                 }
                 int top = INT_MAX, left = INT_MAX;
@@ -16,15 +16,9 @@ public:
                 if (j != 0) {
                     left = grid[i][j - 1];
                 }
-                grid[i][j] = grid[i][j]+min(left, top);
+                grid[i][j] = grid[i][j] + min(left, top);
             }
         }
-        // for (auto row : grid) {
-        //     for (auto cell : row) {
-        //         cout << cell << " ";
-        //     }
-        //     cout << endl;
-        // }
         return grid[row - 1][col - 1];
     }
 };
