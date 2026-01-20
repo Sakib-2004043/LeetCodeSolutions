@@ -10,11 +10,12 @@ public:
                 swap(roads[i][0], roads[i][1]);
             }
         }
+        sort(roads.begin(), roads.end());
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 int sum = v[i] + v[j];
                 vector<int> edge = {i, j};
-                if (find(roads.begin(), roads.end(), edge) != roads.end()) {
+                if (binary_search(roads.begin(), roads.end(), edge)) {
                     sum--;
                 }
                 ans = max(ans, sum);
