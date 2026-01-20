@@ -1,5 +1,6 @@
 class Solution {
 private:
+    vector<vector<int>> directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
     void check_dfs(auto& board, auto& visited, int row, int col) {
         if (visited[row][col]) {
             return;
@@ -7,7 +8,6 @@ private:
         visited[row][col] = true;
         int totalRow = board.size();
         int totalCol = board[0].size();
-        vector<vector<int>> directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
         for (auto& dir : directions) {
             int newRow = row + dir[0];
             int newCol = col + dir[1];
