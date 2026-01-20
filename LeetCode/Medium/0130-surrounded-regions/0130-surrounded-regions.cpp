@@ -27,7 +27,7 @@ public:
         for (int i = 0; i < row; i++) {
             int j = 0;
             while (j < col) {
-                if (board[i][j] == 'O') {
+                if (board[i][j] == 'O' && !visited[i][j]) {
                     check_dfs(board, visited, i, j);
                 }
                 j += (i == 0 || i == row - 1) ? 1 : (col - 1);
