@@ -1,24 +1,20 @@
 class Solution {
 public:
     int maximalNetworkRank(int n, vector<vector<int>>& roads) {
-        vector<int> v(n, 0);
-        int ans = 0;
-        for (int i = 0; i < roads.size(); i++) {
-            v[roads[i][0]]++;
-            v[roads[i][1]]++;
-            if (roads[i][0] > roads[i][1]) {
-                swap(roads[i][0], roads[i][1]);
-            }
+        vector<int> degree(n, 0);
+        vector<vector<bool>> adj(n, vector<bool>(n, false));
+        for (auto& road : roads) {
+            int u = road[0], v = road[1];
+            degree[u]++;
+            degree[v]++;
+            adj[u][v] = true;
+            adj[v][u] = true;
         }
-        sort(roads.begin(), roads.end());
+        int ans = 0;
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                int sum = v[i] + v[j];
-                vector<int> edge = {i, j};
-                if (binary_search(roads.begin(), roads.end(), edge)) {
-                    sum--;
-                }
-                ans = max(ans, sum);
+                int networkRank = degree[i] + degree[j] - (adj[i][j] ? 1 : 0);
+                ans = max(ans, networkRank);
             }
         }
         return ans;
