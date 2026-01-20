@@ -1,7 +1,6 @@
 class Solution {
 private:
-    vector<vector<bool>> visited;
-    void check_dfs(auto& board, int row, int col) {
+    void check_dfs(auto& board, auto& visited, int row, int col) {
         if (visited[row][col]) {
             return;
         }
@@ -15,7 +14,7 @@ private:
             if (newRow >= 0 && newRow < totalRow && newCol >= 0 &&
                 newCol < totalCol && !visited[newRow][newCol] &&
                 board[newRow][newCol] == 'O') {
-                check_dfs(board, newRow, newCol);
+                check_dfs(board, visited, newRow, newCol);
             }
         }
     }
@@ -24,12 +23,12 @@ public:
     void solve(vector<vector<char>>& board) {
         int row = board.size();
         int col = board[0].size();
-        visited.assign(row, vector<bool>(col, false));
+        vector<vector<bool>> visited(row, vector<bool>(col, false));
         for (int i = 0; i < row; i++) {
             int j = 0;
             while (j < col) {
                 if (board[i][j] == 'O') {
-                    check_dfs(board, i, j);
+                    check_dfs(board, visited, i, j);
                 }
                 j += (i == 0 || i == row - 1) ? 1 : (col - 1);
             }
