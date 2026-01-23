@@ -1,21 +1,22 @@
 class Solution {
 public:
     int numSquares(int n) {
-        vector<int> prime;
-        for (int i = 1; i * i <= n; i++) {
-            prime.push_back(i * i);
-        }
-        vector<int> dp(n + 5, 0);
+        // Generate all perfect squares <= n
+        vector<int> squares;
+        for (int i = 1; i * i <= n; i++)
+            squares.push_back(i * i);
+
+        // dp[i] = minimum number of perfect squares summing to i
+        vector<int> dp(n + 1, INT_MAX);
+
+        dp[0] = 0; // base case
         for (int i = 1; i <= n; i++) {
-            if ((int)sqrt(i) * (int)sqrt(i) == i) {
-                dp[i] = 1;
-                continue;
+            for (int sq : squares) {
+                if (sq > i) {
+                    break;
+                }
+                dp[i] = min(dp[i], 1 + dp[i - sq]);
             }
-            int mn = INT_MAX;
-            for (int j = 0; j < prime.size() && prime[j] < i; j++) {
-                mn = min(mn, dp[prime[j]] + dp[i - prime[j]]);
-            }
-            dp[i] = mn;
         }
         return dp[n];
     }
