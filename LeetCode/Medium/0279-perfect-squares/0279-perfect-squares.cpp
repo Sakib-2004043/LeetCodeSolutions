@@ -5,9 +5,6 @@ public:
         for (int i = 1; i * i <= n; i++) {
             prime.push_back(i * i);
         }
-        for (auto x : prime) {
-            cout << x << " ";
-        }
         vector<int> dp(n + 5, 0);
         for (int i = 1; i <= n; i++) {
             if ((int)sqrt(i) * (int)sqrt(i) == i) {
