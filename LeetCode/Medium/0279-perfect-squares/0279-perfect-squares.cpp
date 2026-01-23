@@ -1,12 +1,16 @@
 class Solution {
+private:
+    vector<int> dp;
+
 public:
-    int numSquares(int n) {
+    Solution() {
+        const int N = 1e4 + 1;
+        dp.assign(N, 0);
         vector<int> prime;
-        for (int i = 1; i * i <= n; i++) {
+        for (int i = 1; i * i < N - 5; i++) {
             prime.push_back(i * i);
         }
-        vector<int> dp(n + 5, 0);
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i < N; i++) {
             if ((int)sqrt(i) * (int)sqrt(i) == i) {
                 dp[i] = 1;
                 continue;
@@ -17,6 +21,6 @@ public:
             }
             dp[i] = mn;
         }
-        return dp[n];
     }
+    int numSquares(int n) { return dp[n]; }
 };
