@@ -3,7 +3,7 @@
 class Solution {
 public:
     int numTrees(int n) {
-        long double ans = 1.0 / (n + 1);
+        double ans = 1.0 / (n + 1);
         for (int i = 1; i <= 2 * n; i++) {
             ans *= i;
             if (i <= n) {
