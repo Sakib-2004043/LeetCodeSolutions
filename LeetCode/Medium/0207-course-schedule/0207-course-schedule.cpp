@@ -25,14 +25,11 @@ private:
 public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
         vector<vector<int>> graph(numCourses);
-
         for (auto& e : prerequisites) {
             graph[e[1]].push_back(e[0]);
         }
-
         visited.assign(numCourses, false);
         inStack.assign(numCourses, false);
-
         bool ans = true;
         for (int i = 0; i < numCourses && ans; i++) {
             cycle_check_dfs(graph, i, ans);
