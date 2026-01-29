@@ -13,10 +13,13 @@ public:
         return snap_id - 1;
     }
 
-    int get(int index, int snap_id) {
+    int get(int index, int snap_id) { 
         auto ub = mp[index].upper_bound(snap_id);
-        return prev(ub)->second;
-    }
+        if(ub != mp[index].begin()){
+            return prev(ub)->second;
+        }
+        return 0;
+     }
 };
 
 /**
