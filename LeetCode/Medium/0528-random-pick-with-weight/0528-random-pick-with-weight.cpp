@@ -1,25 +1,19 @@
 class Solution {
 private:
     vector<int> w;
-    int total_sum;
 
 public:
     Solution(vector<int>& w) {
         for (int i = 1; i < w.size(); i++) {
             w[i] += w[i - 1];
         }
-        total_sum = w.back();
         this->w = w;
     }
 
     int pickIndex() {
-        int r = rand() % total_sum;
-        for (int i = 0; i < w.size(); i++) {
-            if (w[i] > r) {
-                return i;
-            }
-        }
-        return -1;
+        int randVal = rand() % w.back();
+        int idx = upper_bound(w.begin(), w.end(), randVal) - w.begin();
+        return idx;
     }
 };
 
