@@ -7,7 +7,7 @@ public:
         for (int i = 1; i < w.size(); i++) {
             w[i] += w[i - 1];
         }
-        this->w = w;
+        this->w = move(w);
     }
 
     int pickIndex() {
