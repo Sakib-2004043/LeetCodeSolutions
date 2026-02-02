@@ -1,26 +1,25 @@
 class Solution {
 private:
-    queue<pair<int, int>> idxVal;
     vector<int> w;
+    int total_sum;
 
 public:
     Solution(vector<int>& w) {
-        for (int i = 0; i < w.size(); i++) {
-            idxVal.push({i, w[i]});
+        for (int i = 1; i < w.size(); i++) {
+            w[i] += w[i - 1];
         }
+        total_sum = w.back();
         this->w = w;
     }
 
     int pickIndex() {
-        auto [idx, val] = idxVal.front();
-        val--;
-        if (val == 0) {
-            idxVal.pop();
-            idxVal.push({idx, w[idx]});
-        }else{
-            idxVal.front().second = val;
+        int r = rand() % total_sum;
+        for (int i = 0; i < w.size(); i++) {
+            if (w[i] > r) {
+                return i;
+            }
         }
-        return idx;
+        return -1;
     }
 };
 
