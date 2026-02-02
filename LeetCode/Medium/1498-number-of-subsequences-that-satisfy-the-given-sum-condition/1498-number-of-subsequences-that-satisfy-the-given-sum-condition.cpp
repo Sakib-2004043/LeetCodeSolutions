@@ -11,7 +11,6 @@ public:
         for (int i = 0; i < n; i++) {
             int left = i, right = n - 1;
             int best = -1;
-
             while (left <= right) {
                 int mid = left + (right - left) / 2;
                 if (nums[i] + nums[mid] <= target) {
