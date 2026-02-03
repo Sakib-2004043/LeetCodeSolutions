@@ -11,7 +11,7 @@ public:
 
             // --------- ODD length palindromes ----------
             int left = i;
-            int right = i;
+            int right = i + (n+1)%2;
 
             while (left >= 0 && right < n && s[left] == s[right]) {
                 int len = right - left + 1;
@@ -23,19 +23,19 @@ public:
                 right++;
             }
 
-            // --------- EVEN length palindromes ----------
-            left = i;
-            right = i + 1;
+            // // --------- EVEN length palindromes ----------
+            // left = i;
+            // right = i + 1;
 
-            while (left >= 0 && right < n && s[left] == s[right]) {
-                int len = right - left + 1;
-                if (len > maxLen) {
-                    start = left;
-                    maxLen = len;
-                }
-                left--;
-                right++;
-            }
+            // while (left >= 0 && right < n && s[left] == s[right]) {
+            //     int len = right - left + 1;
+            //     if (len > maxLen) {
+            //         start = left;
+            //         maxLen = len;
+            //     }
+            //     left--;
+            //     right++;
+            // }
         }
 
         return s.substr(start, maxLen);
