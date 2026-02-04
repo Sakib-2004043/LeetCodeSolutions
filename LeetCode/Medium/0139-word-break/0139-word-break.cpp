@@ -16,7 +16,6 @@ public:
                 if (found && dp[j]) {
                     dp[i] = true;
                 }
-                cout << subString << " " << dp[i] << endl;
             }
         }
         return dp[n];
