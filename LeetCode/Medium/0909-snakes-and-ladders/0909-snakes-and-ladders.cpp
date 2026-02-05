@@ -10,12 +10,6 @@ public:
                 reverse(board[i].begin(), board[i].end());
             }
         }
-        // for (auto v : board) {
-        //     for (auto x : v) {
-        //         cout << x << " ";
-        //     }
-        //     cout << endl;
-        // }
         vector<int> jump(n * n + 1, 0);
         for (int i = 0, k = 1; i < n; i++) {
             for (int j = 0; j < n; j++) {
