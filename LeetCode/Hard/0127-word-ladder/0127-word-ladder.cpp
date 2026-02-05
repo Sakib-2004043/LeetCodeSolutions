@@ -9,7 +9,6 @@ public:
         unordered_set<string> visited;
         queue<string> q;
         q.push(beginWord);
-
         int steps = 1;
         while (!q.empty()) {
             int sz = q.size();
