@@ -13,7 +13,6 @@ public:
         for (int j = 0; j <= col; j++) {
             dp[0][j] = j;
         }
-
         for (int i = 1; i <= row; i++) {
             for (int j = 1; j <= col; j++) {
                 if (word1[i - 1] == word2[j - 1]) {
