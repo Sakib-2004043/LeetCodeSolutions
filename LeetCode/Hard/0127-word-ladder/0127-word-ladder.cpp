@@ -32,7 +32,6 @@ public:
             }
             steps++;
         }
-
         return 0;
     }
 };
