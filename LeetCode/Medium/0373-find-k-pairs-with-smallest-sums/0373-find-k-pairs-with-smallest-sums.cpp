@@ -4,8 +4,7 @@ private:
     priority_queue<T, vector<T>, greater<T>> pq;
 
 public:
-    vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2,
-                                       int k) {
+    vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k) {
         vector<vector<int>> ans;
         for (int i = 0; i < nums1.size(); i++) {
             pq.push({nums1[i] + nums2[0], i, 0});
