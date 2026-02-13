@@ -1,11 +1,7 @@
-#include <bits/stdc++.h>
-typedef long long lli;
-using namespace std;
-
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        lli i, j, n, mx;
+        int i, j, n, mx;
         unordered_map<char, bool> visited;
         n = s.size();
         if(n==1){
