@@ -20,7 +20,7 @@ public:
             visited[node] = true;
             minDis[node] = min(minDis[node], cost);
             for (auto [nextNode, nextCost] : graph[node]) {
-                if (!visited[nextNode]) {
+                if (!visited[nextNode] && cost + nextCost < minDis[nextNode]) {
                     minHeap.push({cost + nextCost, nextNode});
                 }
             }
