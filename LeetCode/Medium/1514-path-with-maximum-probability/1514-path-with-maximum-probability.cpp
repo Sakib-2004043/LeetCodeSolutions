@@ -18,7 +18,7 @@ public:
             if (node == end_node) {
                 return prob;
             }
-            // if (prob < best[node]) {continue;}
+            if (prob < best[node]) {continue;}
             for (auto& [nextNode, edgeProb] : graph[node]) {
                 double newProb = prob * edgeProb;
                 if (newProb > best[nextNode]) {
