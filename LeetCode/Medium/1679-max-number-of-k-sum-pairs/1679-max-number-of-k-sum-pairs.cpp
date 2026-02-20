@@ -1,3 +1,13 @@
+auto init = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 0;
+}();
+#pragma GCC optimize("O3") 
+#pragma GCC optimize("Ofast,unroll-loops")
+#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+
 class Solution {
 public:
     int maxOperations(vector<int>& nums, int k) {
