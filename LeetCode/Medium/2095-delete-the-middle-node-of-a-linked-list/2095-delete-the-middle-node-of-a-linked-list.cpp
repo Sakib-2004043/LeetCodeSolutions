@@ -8,6 +8,16 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+auto init = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 0;
+}();
+#pragma GCC optimize("O3")
+#pragma GCC optimize("Ofast,unroll-loops")
+#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+
 class Solution {
 public:
     ListNode* deleteMiddle(ListNode* head) {
@@ -17,7 +27,7 @@ public:
             totalNode++;
             curNode = curNode->next;
         }
-        if(totalNode == 1){
+        if (totalNode == 1) {
             return nullptr;
         }
         int midNode = totalNode / 2;
