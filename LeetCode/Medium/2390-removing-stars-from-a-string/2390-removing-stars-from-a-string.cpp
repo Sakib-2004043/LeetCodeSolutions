@@ -1,13 +1,14 @@
 class Solution {
 public:
     string removeStars(string s) {
-        while (true) {
-            int idx = s.find('*');
-            if (idx == -1) {
-                break;
+        string ans;
+        for (char c : s) {
+            if (c == '*' && !ans.empty()) {
+                ans.pop_back();
+            } else {
+                ans.push_back(c);
             }
-            s.erase(idx - 1, 2);
         }
-        return s;
+        return ans;
     }
 };
