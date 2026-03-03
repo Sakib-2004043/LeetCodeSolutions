@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1071-greatest-common-divisor-of-strings](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1071-greatest-common-divisor-of-strings/) | Easy |
 | [1657-determine-if-two-strings-are-close](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1657-determine-if-two-strings-are-close/) | Medium |
 | [1768-merge-strings-alternately](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1768-merge-strings-alternately/) | Easy |
 ## Sorting
@@ -24,4 +25,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1768-merge-strings-alternately](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1768-merge-strings-alternately/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1071-greatest-common-divisor-of-strings](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1071-greatest-common-divisor-of-strings/) | Easy |
 <!---LeetCode Topics End-->
