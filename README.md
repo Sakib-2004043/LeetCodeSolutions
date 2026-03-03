@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1657-determine-if-two-strings-are-close](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1657-determine-if-two-strings-are-close/) | Medium |
+| [2215-find-the-difference-of-two-arrays](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/2215-find-the-difference-of-two-arrays/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -37,6 +38,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0605-can-place-flowers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0605-can-place-flowers/) | Easy |
 | [0724-find-pivot-index](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0724-find-pivot-index/) | Easy |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1431-kids-with-the-greatest-number-of-candies/) | Easy |
+| [2215-find-the-difference-of-two-arrays](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/2215-find-the-difference-of-two-arrays/) | Easy |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
