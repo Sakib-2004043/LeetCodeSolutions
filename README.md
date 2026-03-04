@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0605-can-place-flowers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0605-can-place-flowers/) | Easy |
 | [0724-find-pivot-index](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0724-find-pivot-index/) | Easy |
+| [0746-min-cost-climbing-stairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0746-min-cost-climbing-stairs/) | Easy |
 | [1207-unique-number-of-occurrences](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1207-unique-number-of-occurrences/) | Easy |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1431-kids-with-the-greatest-number-of-candies/) | Easy |
 | [2215-find-the-difference-of-two-arrays](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/2215-find-the-difference-of-two-arrays/) | Easy |
@@ -88,4 +89,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0700-search-in-a-binary-search-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0700-search-in-a-binary-search-tree/) | Easy |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0746-min-cost-climbing-stairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0746-min-cost-climbing-stairs/) | Easy |
 <!---LeetCode Topics End-->
