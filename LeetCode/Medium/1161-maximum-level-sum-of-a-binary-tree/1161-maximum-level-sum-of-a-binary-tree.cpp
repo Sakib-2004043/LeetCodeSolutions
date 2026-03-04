@@ -11,26 +11,31 @@
  * };
  */
 class Solution {
-    unordered_map<int, int> sum;
-    void dfs(TreeNode* node, int level) {
-        if (!node) {
-            return;
-        }
-        sum[level] += node->val;
-        dfs(node->left, level + 1);
-        dfs(node->right, level + 1);
-    }
-
 public:
     int maxLevelSum(TreeNode* root) {
-        dfs(root, 1);
-        int mx = INT_MIN, ans = 1;
-        for (auto [l, s] : sum) {
-            if (mx <= s) {
-                ans = (mx == s) ? min(ans, l) : l;
-                mx = s;
+        queue<TreeNode*> q;
+        int level = 1, best = 1, maxSum = 0;
+        q.push(root);
+        while (!q.empty()) {
+            int sz = q.size();
+            int curSum = 0;
+            while (sz--) {
+                TreeNode* node = q.front();
+                q.pop();
+                if (node->left) {
+                    q.push(node->left);
+                }
+                if (node->right) {
+                    q.push(node->right);
+                }
+                curSum += node->val;
             }
+            if (curSum > maxSum) {
+                best = level;
+                maxSum = curSum;
+            }
+            level++;
         }
-        return ans;
+        return best;
     }
 };
