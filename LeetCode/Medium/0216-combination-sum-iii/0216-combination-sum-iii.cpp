@@ -2,14 +2,14 @@ class Solution {
 private:
     vector<vector<int>> ans;
     void backTrack(vector<int>& v, int tar, int sum, int k, int num) {
-        if (k == -1 || sum > tar) {
+        if (sum > tar) {
             return;
         }
         if (k == 0 && sum == tar) {
             ans.push_back(v);
             return;
         }
-        for (int i = num + 1; i < 10; i++) {
+        for (int i = num + 1; k && i < 10; i++) {
             v.push_back(i);
             backTrack(v, tar, sum + i, k - 1, i);
             v.pop_back();
