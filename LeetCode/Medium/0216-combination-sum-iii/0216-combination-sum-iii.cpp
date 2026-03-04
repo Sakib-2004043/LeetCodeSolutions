@@ -1,7 +1,7 @@
 class Solution {
 private:
     vector<vector<int>> ans;
-    void backTrack(vector<int> v, int tar, int sum, int k, int num) {
+    void backTrack(vector<int>& v, int tar, int sum, int k, int num) {
         if (k == -1 || sum > tar) {
             return;
         }
