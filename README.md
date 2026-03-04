@@ -62,6 +62,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0700-search-in-a-binary-search-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0700-search-in-a-binary-search-tree/) | Easy |
 | [0872-leaf-similar-trees](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0872-leaf-similar-trees/) | Easy |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1448-count-good-nodes-in-binary-tree/) | Medium |
@@ -74,6 +75,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0700-search-in-a-binary-search-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0700-search-in-a-binary-search-tree/) | Easy |
 | [0872-leaf-similar-trees](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0872-leaf-similar-trees/) | Easy |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1448-count-good-nodes-in-binary-tree/) | Medium |
@@ -82,4 +84,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1448-count-good-nodes-in-binary-tree/) | Medium |
+## Binary Search Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0700-search-in-a-binary-search-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0700-search-in-a-binary-search-tree/) | Easy |
 <!---LeetCode Topics End-->
