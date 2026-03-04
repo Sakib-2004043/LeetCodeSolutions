@@ -37,6 +37,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0216-combination-sum-iii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0216-combination-sum-iii/) | Medium |
 | [0605-can-place-flowers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0605-can-place-flowers/) | Easy |
 | [0724-find-pivot-index](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0724-find-pivot-index/) | Easy |
 | [0746-min-cost-climbing-stairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0746-min-cost-climbing-stairs/) | Easy |
@@ -93,4 +94,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0746-min-cost-climbing-stairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0746-min-cost-climbing-stairs/) | Easy |
+## Backtracking
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0216-combination-sum-iii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0216-combination-sum-iii/) | Medium |
 <!---LeetCode Topics End-->
