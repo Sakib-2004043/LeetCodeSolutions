@@ -14,7 +14,7 @@ class Solution {
 public:
     int maxLevelSum(TreeNode* root) {
         queue<TreeNode*> q;
-        int level = 1, best = 1, maxSum = 0;
+        int level = 1, best = 1, maxSum = INT_MIN;
         q.push(root);
         while (!q.empty()) {
             int sz = q.size();
