@@ -4,52 +4,50 @@ private:
         bool isEnd = false;
         Trie* child[26] = {nullptr};
     };
-    void makeTrie(string word, Trie* node) {
-        for (auto w : word) {
-            if (node->child[w - 'a'] == nullptr) {
-                node->child[w - 'a'] = new Trie();
+    void insert(string& word, Trie* node) {
+        for (char c : word) {
+            if (!node->child[c - 'a']) {
+                node->child[c - 'a'] = new Trie();
             }
-            node = node->child[w - 'a'];
+            node = node->child[c - 'a'];
         }
         node->isEnd = true;
     }
-    void dfs(vector<string>& ans, Trie* node, string word) {
+    void dfs(Trie* node, string& current, vector<string>& ans) {
         if (!node || ans.size() == 3) {
             return;
         }
         if (node->isEnd) {
-            ans.push_back(word);
+            ans.push_back(current);
         }
         for (char c = 'a'; c <= 'z'; c++) {
-            if (node->child[c - 'a'] != nullptr) {
-                dfs(ans, node->child[c - 'a'], word + c);
+            Trie* next = node->child[c - 'a'];
+            if (next) {
+                current.push_back(c);
+                dfs(next, current, ans);
+                current.pop_back();
             }
         }
-    }
-    vector<string> findWord(string word, Trie* node) {
-        for (auto w : word) {
-            if (node == nullptr) {
-                return {};
-            }
-            node = node->child[w - 'a'];
-        }
-        vector<string> ans;
-        dfs(ans, node, word);
-        return ans;
     }
 
 public:
     vector<vector<string>> suggestedProducts(vector<string>& products,
                                              string searchWord) {
         Trie* root = new Trie();
-        for (auto product : products) {
-            makeTrie(product, root);
+        for (auto& p : products) {
+            insert(p, root);
         }
-        int n = searchWord.size();
         vector<vector<string>> ans;
-        for (int i = 1; i <= n; i++) {
+        Trie* node = root;
+        string prefix = "";
+        for (char c : searchWord) {
+            prefix += c;
+            if (node) {
+                node = node->child[c - 'a'];
+            }
             vector<string> row;
-            row = findWord(searchWord.substr(0, i), root);
+            string temp = prefix;
+            dfs(node, temp, row);
             ans.push_back(row);
         }
         return ans;
