@@ -31,6 +31,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0345-reverse-vowels-of-a-string](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0345-reverse-vowels-of-a-string/) | Easy |
 | [1768-merge-strings-alternately](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1768-merge-strings-alternately/) | Easy |
+| [2462-total-cost-to-hire-k-workers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2462-total-cost-to-hire-k-workers/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -47,6 +48,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1431-kids-with-the-greatest-number-of-candies/) | Easy |
 | [2215-find-the-difference-of-two-arrays](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/2215-find-the-difference-of-two-arrays/) | Easy |
 | [2352-equal-row-and-column-pairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2352-equal-row-and-column-pairs/) | Medium |
+| [2462-total-cost-to-hire-k-workers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2462-total-cost-to-hire-k-workers/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2542-maximum-subsequence-score/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
@@ -66,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2352-equal-row-and-column-pairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2352-equal-row-and-column-pairs/) | Medium |
+| [2462-total-cost-to-hire-k-workers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2462-total-cost-to-hire-k-workers/) | Medium |
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -119,5 +122,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [2462-total-cost-to-hire-k-workers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2462-total-cost-to-hire-k-workers/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2542-maximum-subsequence-score/) | Medium |
 <!---LeetCode Topics End-->
