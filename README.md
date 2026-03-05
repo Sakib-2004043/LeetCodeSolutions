@@ -15,11 +15,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0345-reverse-vowels-of-a-string](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0345-reverse-vowels-of-a-string/) | Easy |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1071-greatest-common-divisor-of-strings/) | Easy |
+| [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
 | [1657-determine-if-two-strings-are-close](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1657-determine-if-two-strings-are-close/) | Medium |
 | [1768-merge-strings-alternately](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1768-merge-strings-alternately/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
 | [1657-determine-if-two-strings-are-close](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1657-determine-if-two-strings-are-close/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2542-maximum-subsequence-score/) | Medium |
 ## Counting
@@ -45,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0746-min-cost-climbing-stairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0746-min-cost-climbing-stairs/) | Easy |
 | [0994-rotting-oranges](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
 | [1207-unique-number-of-occurrences](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1207-unique-number-of-occurrences/) | Easy |
+| [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1431-kids-with-the-greatest-number-of-candies/) | Easy |
 | [2215-find-the-difference-of-two-arrays](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/2215-find-the-difference-of-two-arrays/) | Easy |
 | [2352-equal-row-and-column-pairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2352-equal-row-and-column-pairs/) | Medium |
@@ -99,6 +102,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0700-search-in-a-binary-search-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0700-search-in-a-binary-search-tree/) | Easy |
+| [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -122,6 +126,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
 | [2462-total-cost-to-hire-k-workers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2462-total-cost-to-hire-k-workers/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2542-maximum-subsequence-score/) | Medium |
+## Trie
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
 <!---LeetCode Topics End-->
