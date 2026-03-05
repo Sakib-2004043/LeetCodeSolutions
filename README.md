@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1657-determine-if-two-strings-are-close](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1657-determine-if-two-strings-are-close/) | Medium |
+| [2542-maximum-subsequence-score](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2542-maximum-subsequence-score/) | Medium |
 ## Counting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -46,10 +47,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1431-kids-with-the-greatest-number-of-candies/) | Easy |
 | [2215-find-the-difference-of-two-arrays](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/2215-find-the-difference-of-two-arrays/) | Easy |
 | [2352-equal-row-and-column-pairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2352-equal-row-and-column-pairs/) | Medium |
+| [2542-maximum-subsequence-score](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2542-maximum-subsequence-score/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0605-can-place-flowers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0605-can-place-flowers/) | Easy |
+| [2542-maximum-subsequence-score](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2542-maximum-subsequence-score/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -113,4 +116,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0933-number-of-recent-calls](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0933-number-of-recent-calls/) | Easy |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2542-maximum-subsequence-score](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2542-maximum-subsequence-score/) | Medium |
 <!---LeetCode Topics End-->
