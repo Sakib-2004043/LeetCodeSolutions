@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0345-reverse-vowels-of-a-string](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0345-reverse-vowels-of-a-string/) | Easy |
 | [0394-decode-string](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0394-decode-string/) | Medium |
+| [0649-dota2-senate](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0649-dota2-senate/) | Medium |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1071-greatest-common-divisor-of-strings/) | Easy |
 | [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
 | [1657-determine-if-two-strings-are-close](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1657-determine-if-two-strings-are-close/) | Medium |
@@ -58,6 +59,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0605-can-place-flowers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0605-can-place-flowers/) | Easy |
+| [0649-dota2-senate](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0649-dota2-senate/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2542-maximum-subsequence-score/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
@@ -119,6 +121,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0649-dota2-senate](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0649-dota2-senate/) | Medium |
 | [0933-number-of-recent-calls](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0933-number-of-recent-calls/) | Easy |
 ## Data Stream
 | Problem Name | Difficulty |
