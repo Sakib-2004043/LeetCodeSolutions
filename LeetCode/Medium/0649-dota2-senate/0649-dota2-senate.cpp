@@ -1,19 +1,19 @@
 class Solution {
 public:
     string predictPartyVictory(string senate) {
-        int N = 1e4;
         queue<int>rad, dir;
-        for (int i = 0; i < senate.size(); i++) {
+        int n = senate.size();
+        for (int i = 0; i < n; i++) {
             senate[i] == 'R' ? rad.push(i) : dir.push(i);
         }
         while (!rad.empty() && !dir.empty()) {
             if(rad.front() < dir.front()) {
-                rad.push(rad.front() + N);
+                rad.push(rad.front() + n);
                 rad.pop();
                 dir.pop();
             }
             else {
-                dir.push(dir.front() + N);
+                dir.push(dir.front() + n);
                 dir.pop();
                 rad.pop();
             }
