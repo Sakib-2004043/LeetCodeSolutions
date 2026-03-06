@@ -1,6 +1,6 @@
 class Solution {
 private:
-    string dfs(string s, int& idx) {
+    string dfs(string& s, int& idx) {
         string ans = "";
         while (idx < s.size()) {
             if (s[idx] == '[') {
