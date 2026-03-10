@@ -86,6 +86,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0094-binary-tree-inorder-traversal/) | Easy |
 | [0450-delete-node-in-a-bst](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0450-delete-node-in-a-bst/) | Medium |
+| [0543-diameter-of-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0543-diameter-of-binary-tree/) | Easy |
 | [0700-search-in-a-binary-search-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0700-search-in-a-binary-search-tree/) | Easy |
 | [0872-leaf-similar-trees](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0872-leaf-similar-trees/) | Easy |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
@@ -94,6 +95,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0094-binary-tree-inorder-traversal/) | Easy |
+| [0543-diameter-of-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0543-diameter-of-binary-tree/) | Easy |
 | [0872-leaf-similar-trees](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0872-leaf-similar-trees/) | Easy |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1448-count-good-nodes-in-binary-tree/) | Medium |
@@ -102,6 +104,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0094-binary-tree-inorder-traversal/) | Easy |
 | [0450-delete-node-in-a-bst](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0450-delete-node-in-a-bst/) | Medium |
+| [0543-diameter-of-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0543-diameter-of-binary-tree/) | Easy |
 | [0700-search-in-a-binary-search-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0700-search-in-a-binary-search-tree/) | Easy |
 | [0872-leaf-similar-trees](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0872-leaf-similar-trees/) | Easy |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
