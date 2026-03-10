@@ -16,16 +16,16 @@ private:
         if (node == NULL) {
             return 0;
         }
-        int lSum = dfs(node->left, ans) + 1;
-        int rSum = dfs(node->right, ans) + 1;
+        int lSum = dfs(node->left, ans);
+        int rSum = dfs(node->right, ans);
         ans = max(ans, rSum + lSum);
-        return max(lSum, rSum);
+        return max(lSum, rSum) + 1;
     }
 
 public:
     int diameterOfBinaryTree(TreeNode* root) {
         int ans = 0;
         dfs(root, ans);
-        return ans - 2;
+        return ans;
     }
 };
