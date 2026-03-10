@@ -13,6 +13,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0131-palindrome-partitioning](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
 | [0345-reverse-vowels-of-a-string](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0345-reverse-vowels-of-a-string/) | Easy |
 | [0394-decode-string](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0394-decode-string/) | Medium |
 | [0649-dota2-senate](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0649-dota2-senate/) | Medium |
@@ -118,12 +119,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0131-palindrome-partitioning](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0435-non-overlapping-intervals/) | Medium |
 | [0746-min-cost-climbing-stairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0746-min-cost-climbing-stairs/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0078-subsets](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
+| [0131-palindrome-partitioning](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
 | [0216-combination-sum-iii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0216-combination-sum-iii/) | Medium |
 ## Design
 | Problem Name | Difficulty |
