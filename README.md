@@ -55,6 +55,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0078-subsets](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0152-maximum-product-subarray/) | Medium |
 | [0216-combination-sum-iii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0216-combination-sum-iii/) | Medium |
+| [0240-search-a-2d-matrix-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0240-search-a-2d-matrix-ii/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0416-partition-equal-subset-sum/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0435-non-overlapping-intervals/) | Medium |
@@ -84,6 +85,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0240-search-a-2d-matrix-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0240-search-a-2d-matrix-ii/) | Medium |
 | [0994-rotting-oranges](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
 | [2352-equal-row-and-column-pairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2352-equal-row-and-column-pairs/) | Medium |
 ## Simulation
@@ -128,6 +130,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0240-search-a-2d-matrix-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0240-search-a-2d-matrix-ii/) | Medium |
 | [0450-delete-node-in-a-bst](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0450-delete-node-in-a-bst/) | Medium |
 | [0700-search-in-a-binary-search-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0700-search-in-a-binary-search-tree/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0875-koko-eating-bananas/) | Medium |
@@ -186,6 +189,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0240-search-a-2d-matrix-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0240-search-a-2d-matrix-ii/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 ## Bucket Sort
 | Problem Name | Difficulty |
