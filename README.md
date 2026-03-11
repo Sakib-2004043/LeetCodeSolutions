@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0142-linked-list-cycle-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0142-linked-list-cycle-ii/) | Medium |
+| [0160-intersection-of-two-linked-lists](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0160-intersection-of-two-linked-lists/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [1207-unique-number-of-occurrences](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1207-unique-number-of-occurrences/) | Easy |
 | [1657-determine-if-two-strings-are-close](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1657-determine-if-two-strings-are-close/) | Medium |
@@ -40,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0142-linked-list-cycle-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0142-linked-list-cycle-ii/) | Medium |
+| [0160-intersection-of-two-linked-lists](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0160-intersection-of-two-linked-lists/) | Easy |
 | [0345-reverse-vowels-of-a-string](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0345-reverse-vowels-of-a-string/) | Easy |
 | [1768-merge-strings-alternately](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1768-merge-strings-alternately/) | Easy |
 | [2462-total-cost-to-hire-k-workers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2462-total-cost-to-hire-k-workers/) | Medium |
@@ -197,4 +199,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0142-linked-list-cycle-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0142-linked-list-cycle-ii/) | Medium |
+| [0160-intersection-of-two-linked-lists](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0160-intersection-of-two-linked-lists/) | Easy |
 <!---LeetCode Topics End-->
