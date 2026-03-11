@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [1207-unique-number-of-occurrences](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1207-unique-number-of-occurrences/) | Easy |
 | [1657-determine-if-two-strings-are-close](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1657-determine-if-two-strings-are-close/) | Medium |
 | [2215-find-the-difference-of-two-arrays](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/2215-find-the-difference-of-two-arrays/) | Easy |
@@ -24,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0435-non-overlapping-intervals/) | Medium |
 | [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
 | [1657-determine-if-two-strings-are-close](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1657-determine-if-two-strings-are-close/) | Medium |
@@ -31,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [1657-determine-if-two-strings-are-close](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1657-determine-if-two-strings-are-close/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
@@ -48,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0078-subsets](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0152-maximum-product-subarray/) | Medium |
 | [0216-combination-sum-iii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0216-combination-sum-iii/) | Medium |
+| [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0416-partition-equal-subset-sum/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0435-non-overlapping-intervals/) | Medium |
 | [0605-can-place-flowers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0605-can-place-flowers/) | Easy |
@@ -154,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
 | [2462-total-cost-to-hire-k-workers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2462-total-cost-to-hire-k-workers/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2542-maximum-subsequence-score/) | Medium |
@@ -174,4 +179,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0078-subsets](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
+## Bucket Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
+## Quickselect
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 <!---LeetCode Topics End-->
