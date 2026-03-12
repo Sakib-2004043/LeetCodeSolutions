@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0075-sort-colors](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0435-non-overlapping-intervals/) | Medium |
 | [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
@@ -41,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0031-next-permutation](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0031-next-permutation/) | Medium |
+| [0075-sort-colors](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0142-linked-list-cycle-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0142-linked-list-cycle-ii/) | Medium |
 | [0160-intersection-of-two-linked-lists](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0160-intersection-of-two-linked-lists/) | Easy |
 | [0345-reverse-vowels-of-a-string](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0345-reverse-vowels-of-a-string/) | Easy |
@@ -54,6 +56,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0031-next-permutation](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0031-next-permutation/) | Medium |
+| [0075-sort-colors](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0078-subsets](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0152-maximum-product-subarray/) | Medium |
 | [0216-combination-sum-iii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0216-combination-sum-iii/) | Medium |
