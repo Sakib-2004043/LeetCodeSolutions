@@ -4,28 +4,27 @@ unordered_map<char, string> dtc = {{'2', "abc"}, {'3', "def"}, {'4', "ghi"},
 
 class Solution {
 public:
-    vector<string> latter_add(vector<string>& ans, string latters) {
-        int i, j;
-        vector<string> newAns;
-        if (ans.size() == 0) {
-            for (j = 0; j < latters.size(); j++) {
-                newAns.push_back(string(1, latters[j]));
+    vector<string> combine(const vector<string>& prev, const string& letters) {
+        vector<string> result;
+        if (prev.empty()) {
+            for (char c : letters) {
+                result.push_back(string(1, c));
             }
-            return newAns;
+            return result;
         }
-        for (i = 0; i < ans.size(); i++) {
-            for (j = 0; j < latters.size(); j++) {
-                newAns.push_back(ans[i] + latters[j]);
+        for (const string& s : prev) {
+            for (char c : letters) {
+                result.push_back(s + c);
             }
         }
-        return newAns;
+        return result;
     }
     vector<string> letterCombinations(string digits) {
-        int i, n;
         vector<string> ans;
-        n = digits.size();
-        for (i = 0; i < n; i++) {
-            ans = latter_add(ans, dtc[digits[i]]);
+        if (digits.empty())
+            return ans;
+        for (char d : digits) {
+            ans = combine(ans, dtc[d]);
         }
         return ans;
     }
