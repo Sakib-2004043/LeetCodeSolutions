@@ -51,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0142-linked-list-cycle-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0142-linked-list-cycle-ii/) | Medium |
 | [0160-intersection-of-two-linked-lists](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0160-intersection-of-two-linked-lists/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0234-palindrome-linked-list/) | Easy |
+| [0287-find-the-duplicate-number](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0287-find-the-duplicate-number/) | Medium |
 | [0345-reverse-vowels-of-a-string](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0345-reverse-vowels-of-a-string/) | Easy |
 | [1768-merge-strings-alternately](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1768-merge-strings-alternately/) | Easy |
 | [2462-total-cost-to-hire-k-workers](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2462-total-cost-to-hire-k-workers/) | Medium |
@@ -69,6 +70,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0152-maximum-product-subarray](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0152-maximum-product-subarray/) | Medium |
 | [0216-combination-sum-iii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0216-combination-sum-iii/) | Medium |
 | [0240-search-a-2d-matrix-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0240-search-a-2d-matrix-ii/) | Medium |
+| [0287-find-the-duplicate-number](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0287-find-the-duplicate-number/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0416-partition-equal-subset-sum/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0435-non-overlapping-intervals/) | Medium |
@@ -144,6 +146,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0240-search-a-2d-matrix-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0240-search-a-2d-matrix-ii/) | Medium |
+| [0287-find-the-duplicate-number](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0287-find-the-duplicate-number/) | Medium |
 | [0450-delete-node-in-a-bst](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0450-delete-node-in-a-bst/) | Medium |
 | [0700-search-in-a-binary-search-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0700-search-in-a-binary-search-tree/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0875-koko-eating-bananas/) | Medium |
@@ -202,6 +205,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0078-subsets](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
+| [0287-find-the-duplicate-number](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0287-find-the-duplicate-number/) | Medium |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
