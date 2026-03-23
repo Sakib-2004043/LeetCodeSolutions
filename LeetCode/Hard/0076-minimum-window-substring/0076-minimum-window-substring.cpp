@@ -19,7 +19,6 @@ public:
         int start = 0, minLen = INT_MAX;
         while (i < n) {
             cur[s[i]]++;
-
             while (isValid(cur, tar)) {
                 if (i - j + 1 < minLen) {
                     minLen = i - j + 1;
