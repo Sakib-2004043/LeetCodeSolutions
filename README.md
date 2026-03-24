@@ -208,6 +208,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0025-reverse-nodes-in-k-group](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Hard/0025-reverse-nodes-in-k-group/) | Hard |
 | [0234-palindrome-linked-list](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0234-palindrome-linked-list/) | Easy |
 | [0394-decode-string](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0394-decode-string/) | Medium |
 ## Bit Manipulation
@@ -231,6 +232,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0025-reverse-nodes-in-k-group](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Hard/0025-reverse-nodes-in-k-group/) | Hard |
 | [0142-linked-list-cycle-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0142-linked-list-cycle-ii/) | Medium |
 | [0160-intersection-of-two-linked-lists](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0160-intersection-of-two-linked-lists/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0234-palindrome-linked-list/) | Easy |
