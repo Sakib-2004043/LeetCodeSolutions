@@ -1,6 +1,6 @@
 class Solution {
 private:
-    vector<int> makeArr(auto& ht, int bgn, int end, int it) {
+    vector<int> makeArr(vector<int>& ht, int bgn, int end, int it) {
         stack<int> st;
         int n = ht.size();
         vector<int> sn(n, 0);
