@@ -14,21 +14,11 @@ private:
         return sn;
     }
 
-    void display(vector<int>& ns) {
-        for (auto x : ns) cout << x << " ";
-        cout << endl;
-    }
-
 public:
     int largestRectangleArea(vector<int>& heights) {
         int n = heights.size();
-
         vector<int> lsn = makeArr(heights, 0, n, 1);
-        display(lsn);
-
         vector<int> rsn = makeArr(heights, n - 1, -1, -1);
-        display(rsn);
-
         int ans = 0;
         for (int i = 0; i < n; i++) {
             int area = heights[i] * (rsn[i] - lsn[i] - 1);
