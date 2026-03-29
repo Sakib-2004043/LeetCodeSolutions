@@ -1,8 +1,9 @@
 class EventManager {
-public:
+private:
     unordered_map<int, int> mp;
     priority_queue<pair<int, int>> pq;
 
+public:
     EventManager(vector<vector<int>>& events) {
         for (auto& e : events) {
             int id = e[0], p = e[1];
