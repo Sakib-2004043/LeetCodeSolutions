@@ -76,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0001-two-sum/) | Easy |
 | [0031-next-permutation](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0031-next-permutation/) | Medium |
 | [0041-first-missing-positive](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Hard/0041-first-missing-positive/) | Hard |
+| [0051-n-queens](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Hard/0051-n-queens/) | Hard |
 | [0075-sort-colors](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0078-subsets](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
 | [0084-largest-rectangle-in-histogram](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Hard/0084-largest-rectangle-in-histogram/) | Hard |
@@ -179,6 +180,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0017-letter-combinations-of-a-phone-number/) | Medium |
+| [0051-n-queens](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Hard/0051-n-queens/) | Hard |
 | [0078-subsets](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
 | [0131-palindrome-partitioning](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
 | [0216-combination-sum-iii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0216-combination-sum-iii/) | Medium |
