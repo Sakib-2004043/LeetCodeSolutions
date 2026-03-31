@@ -1,8 +1,8 @@
 class Solution {
 private:
     vector<vector<string>> ans;
-    bool isSafe(vector<string>& board, int row, int col) {
-        int n = board.size();
+    bool isSafe(auto& board, int row, int col) {
+        int n = board[0].size();
         for (int i = 0; i < n; i++) {
             if (board[row][i] == 'Q' || board[i][col] == 'Q') {
                 return false;
@@ -20,16 +20,16 @@ private:
         }
         return true;
     }
-    void makePosition(vector<string>& board, int row) {
-        int n = board.size();
-        if(row == n){
+    void addQueen(auto& board, int row) {
+        int n = board[0].size();
+        if (row == n) {
             ans.push_back(board);
             return;
         }
         for (int col = 0; col < n; col++) {
             if (isSafe(board, row, col)) {
                 board[row][col] = 'Q';
-                makePosition(board, row + 1);
+                addQueen(board, row + 1);
             }
             board[row][col] = '.';
         }
@@ -38,7 +38,7 @@ private:
 public:
     vector<vector<string>> solveNQueens(int n) {
         vector<string> board(n, string(n, '.'));
-        makePosition(board, 0);
+        addQueen(board, 0);
         return ans;
     }
 };
