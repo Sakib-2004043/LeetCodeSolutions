@@ -70,6 +70,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1071-greatest-common-divisor-of-strings/) | Easy |
+| [1137-n-th-tribonacci-number](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1137-n-th-tribonacci-number/) | Easy |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -178,6 +179,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0416-partition-equal-subset-sum](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0416-partition-equal-subset-sum/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0435-non-overlapping-intervals/) | Medium |
 | [0746-min-cost-climbing-stairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0746-min-cost-climbing-stairs/) | Easy |
+| [1137-n-th-tribonacci-number](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1137-n-th-tribonacci-number/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -257,4 +259,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Hard/0084-largest-rectangle-in-histogram/) | Hard |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1137-n-th-tribonacci-number](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1137-n-th-tribonacci-number/) | Easy |
 <!---LeetCode Topics End-->
