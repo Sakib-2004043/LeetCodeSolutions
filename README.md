@@ -98,6 +98,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0994-rotting-oranges](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
 | [1207-unique-number-of-occurrences](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1207-unique-number-of-occurrences/) | Easy |
 | [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
+| [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1351-count-negative-numbers-in-a-sorted-matrix/) | Easy |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1431-kids-with-the-greatest-number-of-candies/) | Easy |
 | [2215-find-the-difference-of-two-arrays](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/2215-find-the-difference-of-two-arrays/) | Easy |
 | [2352-equal-row-and-column-pairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2352-equal-row-and-column-pairs/) | Medium |
@@ -121,6 +122,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0240-search-a-2d-matrix-ii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0240-search-a-2d-matrix-ii/) | Medium |
 | [0994-rotting-oranges](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
+| [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1351-count-negative-numbers-in-a-sorted-matrix/) | Easy |
 | [2352-equal-row-and-column-pairs](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/2352-equal-row-and-column-pairs/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
@@ -170,6 +172,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0700-search-in-a-binary-search-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0700-search-in-a-binary-search-tree/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0875-koko-eating-bananas/) | Medium |
 | [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
+| [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1351-count-negative-numbers-in-a-sorted-matrix/) | Easy |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
