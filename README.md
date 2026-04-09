@@ -146,6 +146,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0543-diameter-of-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0543-diameter-of-binary-tree/) | Easy |
 | [0872-leaf-similar-trees](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0872-leaf-similar-trees/) | Easy |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
+| [1192-critical-connections-in-a-network](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Hard/1192-critical-connections-in-a-network/) | Hard |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1448-count-good-nodes-in-binary-tree/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
@@ -266,4 +267,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1137-n-th-tribonacci-number](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1137-n-th-tribonacci-number/) | Easy |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1192-critical-connections-in-a-network](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Hard/1192-critical-connections-in-a-network/) | Hard |
+## Biconnected Component
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1192-critical-connections-in-a-network](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Hard/1192-critical-connections-in-a-network/) | Hard |
 <!---LeetCode Topics End-->
