@@ -3,7 +3,7 @@ private:
     bool ans = false;
     vector<bool> visited;
     void dfs(auto& arr, int idx) {
-        if(arr[idx] == 0){
+        if (arr[idx] == 0) {
             ans = true;
         }
         if (visited[idx]) {
