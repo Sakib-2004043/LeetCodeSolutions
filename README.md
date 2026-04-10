@@ -98,6 +98,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0994-rotting-oranges](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
 | [1207-unique-number-of-occurrences](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1207-unique-number-of-occurrences/) | Easy |
 | [1268-search-suggestions-system](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1268-search-suggestions-system/) | Medium |
+| [1306-jump-game-iii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1306-jump-game-iii/) | Medium |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1351-count-negative-numbers-in-a-sorted-matrix/) | Easy |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/1431-kids-with-the-greatest-number-of-candies/) | Easy |
 | [2215-find-the-difference-of-two-arrays](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/2215-find-the-difference-of-two-arrays/) | Easy |
@@ -147,6 +148,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0872-leaf-similar-trees](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Easy/0872-leaf-similar-trees/) | Easy |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
 | [1192-critical-connections-in-a-network](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Hard/1192-critical-connections-in-a-network/) | Hard |
+| [1306-jump-game-iii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1306-jump-game-iii/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1448-count-good-nodes-in-binary-tree/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
@@ -163,6 +165,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0994-rotting-oranges](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
+| [1306-jump-game-iii](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1306-jump-game-iii/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Sakib-2004043/LeetCodeSolutions/tree/main/LeetCode/Medium/1448-count-good-nodes-in-binary-tree/) | Medium |
 ## Binary Search Tree
 | Problem Name | Difficulty |
